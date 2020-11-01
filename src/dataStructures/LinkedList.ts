@@ -27,11 +27,16 @@ export default class LinkedList {
     let currentNode = this.head;
 
     while (currentNode) {
-      arr.push(currentNode);
+      arr.push(currentNode.value);
       currentNode = currentNode.next;
     }
 
     return arr;
+  }
+
+  fromArray(values: any[]) {
+    values.forEach((value) => this.append(value));
+    return this;
   }
 
   toString(callback?: (node: any) => void) {
@@ -65,7 +70,7 @@ export default class LinkedList {
   find({value, callback}: findArg) {
     if (!this.head) return null;
 
-    let currentNode = this.head;
+    let currentNode: Node | null = this.head;
 
     while(currentNode) {
       // if callback is given, try to find the node using callback
@@ -101,13 +106,77 @@ export default class LinkedList {
   }
 
   deleteTail() {
-    
+    const deletedTail = this.tail;
+
+    // if there's only one node in the list
+    if (this.head === this.tail) {
+      this.head = null;
+      this.tail = null;
+      return deletedTail;
+    }
+
+    // if there are many nodes in the list
+    let currentNode = this.head;
+    while (currentNode?.next) {
+      if (!currentNode.next.next) {
+        currentNode.next = null;
+      } else {
+        currentNode = currentNode.next;
+      }
+    }
+
+    this.tail = currentNode;
+    return deletedTail;
   }
+
   delete(value: any) {
+    if (!this.head) {
+      return null;
+    }
 
+    let deletedNode = null;
+
+    // search from start and keep deleting until head != value
+    while (this.head && this.compare.equal(this.head.value, value)) {
+      deletedNode = this.head;
+      this.head = this.head.next;
+    }
+
+    // find and delete the rest
+    let currentNode = this.head;
+    while (currentNode?.next) {
+      // if next is to be deleted
+      if (this.compare.equal(currentNode.next.value, value)) {
+        deletedNode = currentNode.next;
+        currentNode.next = currentNode.next.next;
+      } else {
+        currentNode = currentNode.next;
+      }
+    }
+
+    // if tail must be deleted
+    if (this.compare.equal(this.tail?.value, value)) {
+      this.tail = currentNode;
+    }
+
+    return deletedNode;
   }
 
-  traverse(value: any) {
+  reverse() {
+    let currentNode = this.head;
+    let nextNode = null;
+    let prevNode = null;
 
+    while (currentNode) {
+      nextNode = currentNode.next;
+
+      currentNode.next = prevNode;
+      prevNode = currentNode;
+      currentNode = nextNode;
+    }
+
+    this.head = this.tail;
+    this.tail = currentNode;
+    return this;
   }
 }
