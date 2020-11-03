@@ -32,7 +32,7 @@ describe('Linked List Node', () => {
 
     expect(node.value).toBe(1)
     expect(node.next).toEqual(node1);
-    expect(node.next.next).toBeNull;
-    expect(node.next.value).toBe(2)
+    expect(node.next?.next).toBeNull;
+    expect(node.next?.value).toBe(2)
   })
 })
