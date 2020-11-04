@@ -12,11 +12,7 @@ export default class Queue {
   }
 
   peak() {
-    if (this.queue.head) {
-      return this.queue.head.value;
-    } else {
-      return null;
-    }
+    return this.queue.head?.value || null;
   }
 
   enqueue(value: any) {
