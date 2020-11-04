@@ -48,7 +48,7 @@ export default class DoublyLinkedList {
     return arr;
   }
 
-  toString(callback?: (node: any) => void) {
+  toString(callback?: (value: any) => string) {
     let currentNode = this.head;
     let arr = [];
     while (currentNode) {
@@ -58,7 +58,7 @@ export default class DoublyLinkedList {
     return arr.toString();
   }
 
-  toStringRev(callback?: (node: any) => void) {
+  toStringRev(callback?: (value: any) => string) {
     let currentNode = this.tail;
     let arr = [];
     while(currentNode) {

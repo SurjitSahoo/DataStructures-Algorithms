@@ -9,7 +9,7 @@ export default class DoublyLinkedListNode {
     this.previous = previous || null;
   }
 
-  toString(callback?: (node: any) => void) {
+  toString(callback?: (node: any) => string) {
     return callback ? callback(this.value) : `${this.value}`;
   }
 }

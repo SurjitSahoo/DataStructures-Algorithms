@@ -39,7 +39,7 @@ export default class LinkedList {
     return this;
   }
 
-  toString(callback?: (node: any) => void) {
+  toString(callback?: (value: any) => string) {
     let currentNode = this.head;
     const arr = [];
     while(currentNode) {
