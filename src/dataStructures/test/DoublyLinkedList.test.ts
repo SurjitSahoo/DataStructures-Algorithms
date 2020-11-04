@@ -101,4 +101,38 @@ describe('Doubly Linked List', () => {
     expect(list.head).toBeNull();
     expect(list.tail).toBeNull();
   })
+
+  it('should find a node by value', () => {
+    const list = new LinkedList();
+    list.append(1).append(1).append(2).append(3).append(4);
+    expect(list.find({value: 5})).toBeNull();
+    const node = list.find({value: 4});
+    expect(node).toBeDefined();
+    expect(node?.value).toBe(4);
+    expect(node?.next).toBeNull();
+    expect(node?.previous?.value).toBe(3);
+  })
+
+  it('should find a node by callback', () => {
+    const list = new LinkedList();
+    list.append({key: 1, value: 'val 1'})
+        .append({key: 2, value: 'val 2'})
+        .append({key: 3, value: 'val 3'});
+    const node = list.find({callback: (value: any) => value.key === 2});
+    expect(node).toBeDefined();
+    expect(node?.value).toEqual({key: 2, value: 'val 2'});
+
+    expect(list.find({callback: (value: any) => value.key === 5})).toBeNull();
+  })
+
+  it('should reverse the list', () => {
+    const list = new LinkedList();
+    list.append(1).append(1).append(2).append(3).append(4);
+    expect(list.reverse().toString()).toBe('4,3,2,1,1');
+    expect(list.head?.value).toBe(4);
+    expect(list.tail).toBeDefined();
+    expect(list.tail?.value).toBe(1);
+    expect(list.head?.previous).toBeNull();
+    expect(list.tail?.next).toBeNull();
+  })
 })

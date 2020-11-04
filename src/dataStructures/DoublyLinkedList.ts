@@ -1,6 +1,16 @@
 import Node from './DoublyLinkedListNode';
 import Comparator, {comparatorFn} from '../utils/Comparator';
 
+interface IValue {
+  value: any,
+  [x: string]: any 
+};
+interface ICallback {
+  callback: (value: any) => boolean,
+  [x: string]: any 
+};
+type findArg = IValue | ICallback;
+
 export default class DoublyLinkedList {
 
   head: Node | null;
@@ -151,11 +161,45 @@ export default class DoublyLinkedList {
     return deletedNode;
   }
 
-  find(value: any) {
-    
+  find({value, callback}: findArg) {
+    if (!this.head) {
+      return null;
+    }
+
+    let currentNode: Node | null = this.head;
+    while (currentNode) {
+      // find by callback
+      if (callback && callback(currentNode.value)) {
+        return currentNode;
+      }
+      // find by value
+      if (this.compare.equal(currentNode.value, value)) {
+        return currentNode;
+      }
+      currentNode = currentNode.next;
+    }
+    return null;
   }
 
   reverse() {
+    let currentNode = this.head;
+    let previousNode = null;
+    let nextNode = null;
 
+    while(currentNode) {
+      previousNode = currentNode.previous;
+      nextNode = currentNode.next;
+
+      currentNode.next = previousNode;
+      currentNode.previous = nextNode;
+
+      previousNode = currentNode;
+      currentNode = nextNode;
+    }
+
+    this.tail = this.head;
+    this.head = previousNode;
+
+    return this;
   }
 }
