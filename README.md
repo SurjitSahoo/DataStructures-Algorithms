@@ -1,8 +1,8 @@
 # DataStructures-Algorithms
 
-#### Data-structures and algorithms in implemented typeScript
+ Data-structures and algorithms in implemented typeScript
 
-<h3 align="center">Data Structures</h3>
+## Data Structures
 
 * [Linked List](src/dataStructures/LinkedList.ts) | [Test](src/dataStructures/test/LinkedList.test.ts)  
   [Linked List Node](src/dataStructures/LinkedListNode.ts) | [Test](src/dataStructures/test/LinkedListNode.test.ts)
