@@ -1,9 +1,23 @@
 /**
+ * Heap is a specialized tree-based data-structure that satisfies following heap-properties
+ * - **Min Heap** -> Key of __Parent Node__ is always less than or equal to the key of __Child Node__
+ * - **Max Heap** -> Key of __Parent Node__ is always greater than or equal to the key of __Child Node__
+ * 
+ * ### Min Heap
+ * ![MinHeap](https://upload.wikimedia.org/wikipedia/commons/6/69/Min-heap.png)
+ * 
+ * ### Max Heap
+ * ![MaxHeap](https://upload.wikimedia.org/wikipedia/commons/3/38/Max-Heap.svg)
+ * 
+ * [![YouTube](http://img.youtube.com/vi/t0Cq6tVNRBA/0.jpg)](http://www.youtube.com/watch?v=t0Cq6tVNRBA)
  * 
  * @module Heap
  */
 import {Comparator, comparatorFn } from '../utils/Comparator';
-// TODO: Complete Heap documentation
+
+/**
+ * Heap Data structure
+ */
 export abstract class Heap {
   compare: Comparator;
   heapContainer: any[];
