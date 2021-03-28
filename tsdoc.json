@@ -1,0 +1,15 @@
+{
+  "name": "Data-Structures & Algorithms in TypeScript",
+  "readme": "README.md",
+  "out": "docs",
+  "entryPoints": ["src"],
+  "exclude": [
+    "**/test/**/*",
+    "**/tests/**/*",
+    "**/__test__/**/*",
+    "**/__tests__/**/*",
+    "**/__test_utils__/**/*",
+    "**/__fixtures__/**/*",
+    "**/testsuite/**/*"
+  ]
+}

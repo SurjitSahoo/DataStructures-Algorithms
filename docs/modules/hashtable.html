@@ -3,8 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>dataStructures/DoublyLinkedList | data_structures_and_algorithms</title>
-	<meta name="description" content="Documentation for data_structures_and_algorithms">
+	<title>HashTable | Data-Structures &amp; Algorithms in TypeScript</title>
+	<meta name="description" content="Documentation for Data-Structures &amp; Algorithms in TypeScript">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
 	<script async src="../assets/js/search.js" id="search-script"></script>
@@ -23,7 +23,7 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
-					<a href="../index.html" class="title">data_structures_and_algorithms</a>
+					<a href="../index.html" class="title">Data-Structures &amp; Algorithms in TypeScript</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
 					<div id="tsd-filter">
@@ -52,19 +52,53 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules.html">data_structures_and_algorithms</a>
+					<a href="../modules.html">Data-Structures &amp; Algorithms in TypeScript</a>
 				</li>
 				<li>
-					<a href="datastructures_doublylinkedlist.html">dataStructures/DoublyLinkedList</a>
+					<a href="hashtable.html">HashTable</a>
 				</li>
 			</ul>
-			<h1>Module dataStructures/DoublyLinkedList</h1>
+			<h1>Module HashTable</h1>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
 		<div class="col-8 col-content">
+			<section class="tsd-panel tsd-comment">
+				<div class="tsd-comment tsd-typography">
+					<div class="lead">
+						<p>A hash-table is basically a key-value lookup data structure, a hash map. A combination of features from Array and LinkedList data structures.
+							Array like constant complexity and LinkedList like flexibility
+						It uses a hash function to compute an index into an array of buckets to put or get the data from.</p>
+					</div>
+					<p><strong>lookup</strong> - key(input) -&gt; hashCode -&gt; index</p>
+					<a href="#problem-statement-collision" id="problem-statement-collision" style="color: inherit; text-decoration: none;">
+						<h3>Problem Statement (Collision)</h3>
+					</a>
+					<ul>
+						<li>The size of the array is fixed, where as number of potential hashCodes is virtually infinite</li>
+						<li>Multiple keys can produce single hashCode</li>
+						<li>And multiple hashCodes can map to a single index of the array of buckets</li>
+					</ul>
+					<a href="#collision-handling" id="collision-handling" style="color: inherit; text-decoration: none;">
+						<h3>Collision Handling</h3>
+					</a>
+					<ul>
+						<li>The buckets will not store a single data entity, but rather it&#39;ll be a linkedList</li>
+						<li>The LinkedList will have all the data items whose keys mapped to the same index of the bucket</li>
+						<li>The data entities will consist of key as well as value as properties</li>
+						<li><blockquote>
+								<p>when multiple keys map to the same index, we go that index and search for the key in the linked list</p>
+							</blockquote>
+						</li>
+					</ul>
+					<p><img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Hash_table_3_1_1_0_1_0_0_SP.svg" alt="Hash Table"></p>
+					<p>Hash collision resolved by chaining.</p>
+					<p><img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Hash_table_5_0_1_1_1_1_1_LL.svg" alt="Hash Collision"></p>
+					<p><a href="http://www.youtube.com/watch?v=shs0KM3wKv8"><img src="http://img.youtube.com/vi/shs0KM3wKv8/0.jpg" alt="YouTube"></a></p>
+				</div>
+			</section>
 			<section class="tsd-panel-group tsd-index-group">
 				<h2>Index</h2>
 				<section class="tsd-panel tsd-index-panel">
@@ -72,7 +106,7 @@
 						<section class="tsd-index-section ">
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/datastructures_doublylinkedlist.default.html" class="tsd-kind-icon">default</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/hashtable.hashtable-1.html" class="tsd-kind-icon">Hash<wbr>Table</a></li>
 							</ul>
 						</section>
 					</div>
@@ -85,66 +119,39 @@
 					<li class=" ">
 						<a href="../modules.html">Exports</a>
 					</li>
+					<li class=" tsd-kind-module">
+						<a href="doubly_linkedlist_node.html">Doubly-<wbr><wbr>Linked<wbr>List-<wbr><wbr>Node</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="doublylinkedlist.html">Doubly<wbr>Linked<wbr>List</a>
+					</li>
 					<li class="current tsd-kind-module">
-						<a href="datastructures_doublylinkedlist.html">data<wbr>Structures/<wbr>Doubly<wbr>Linked<wbr>List</a>
+						<a href="hashtable.html">Hash<wbr>Table</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="datastructures_doublylinkedlistnode.html">data<wbr>Structures/<wbr>Doubly<wbr>Linked<wbr>List<wbr>Node</a>
+						<a href="heap.html">Heap</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="datastructures_hashtable.html">data<wbr>Structures/<wbr>Hash<wbr>Table</a>
+						<a href="linkedlist.html">Linked<wbr>List</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="datastructures_heap.html">data<wbr>Structures/<wbr>Heap</a>
+						<a href="linkedlist_node.html">Linked<wbr>List-<wbr><wbr>Node</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="datastructures_linkedlist.html">data<wbr>Structures/<wbr>Linked<wbr>List</a>
+						<a href="queue.html">Queue</a>
 					</li>
 					<li class=" tsd-kind-module">
-						<a href="datastructures_linkedlistnode.html">data<wbr>Structures/<wbr>Linked<wbr>List<wbr>Node</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="datastructures_queue.html">data<wbr>Structures/<wbr>Queue</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="datastructures_stack.html">data<wbr>Structures/<wbr>Stack</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="datastructures_test_doublylinkedlist_test.html">data<wbr>Structures/test/<wbr>Doubly<wbr>Linked<wbr>List.test</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="datastructures_test_doublylinkedlistnode_test.html">data<wbr>Structures/test/<wbr>Doubly<wbr>Linked<wbr>List<wbr>Node.test</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="datastructures_test_hashtable_test.html">data<wbr>Structures/test/<wbr>Hash<wbr>Table.test</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="datastructures_test_heap_test.html">data<wbr>Structures/test/<wbr>Heap.test</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="datastructures_test_linkedlist_test.html">data<wbr>Structures/test/<wbr>Linked<wbr>List.test</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="datastructures_test_linkedlistnode_test.html">data<wbr>Structures/test/<wbr>Linked<wbr>List<wbr>Node.test</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="datastructures_test_queue_test.html">data<wbr>Structures/test/<wbr>Queue.test</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="datastructures_test_stack_test.html">data<wbr>Structures/test/<wbr>Stack.test</a>
+						<a href="stack.html">Stack</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="utils_comparator.html">utils/<wbr>Comparator</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="utils_test_comparator_test.html">utils/test/<wbr>Comparator.test</a>
 					</li>
 				</ul>
 			</nav>
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/datastructures_doublylinkedlist.default.html" class="tsd-kind-icon">default</a>
+						<a href="../classes/hashtable.hashtable-1.html" class="tsd-kind-icon">Hash<wbr>Table</a>
 					</li>
 				</ul>
 			</nav>

@@ -1,4 +1,4 @@
-import Node from '../DoublyLinkedListNode';
+import {DoublyLinkedListNode as Node} from '../DoublyLinkedListNode';
 
 describe('Doubly LinkedList', () => {
   it('should create primitive node', () => {

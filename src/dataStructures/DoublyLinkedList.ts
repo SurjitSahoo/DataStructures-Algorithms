@@ -1,5 +1,16 @@
-import Node from './DoublyLinkedListNode';
-import Comparator, {comparatorFn} from '../utils/Comparator';
+/**
+ * Doubly linked List is a sequentially linked data items
+ * which are not stored in consecutive spaces.
+ * Each data item has a data-object and they point to the next and previous data items / nodes.
+ * 
+ * ![Doubly Linked List](https://upload.wikimedia.org/wikipedia/commons/5/5e/Doubly-linked-list.svg)
+ * 
+ * [![YouTube](http://img.youtube.com/vi/JdQeNxWCguQ/0.jpg)](http://www.youtube.com/watch?v=JdQeNxWCguQ)
+ * 
+ * @module DoublyLinkedList
+ */
+import {DoublyLinkedListNode as Node} from './DoublyLinkedListNode';
+import {Comparator, comparatorFn} from '../utils/Comparator';
 
 interface IValue {
   value: any,
@@ -11,12 +22,28 @@ interface ICallback {
 };
 type findArg = IValue | ICallback;
 
-export default class DoublyLinkedList {
+/**
+ * Doubly LinkedList data structure
+ */
+export class DoublyLinkedList {
 
+  /**
+   * @property head of the linked list
+   */
   head: Node | null;
+  /**
+   * @property tail of the linked list
+   */
   tail: Node | null;
+  /**
+   * @property A comparator instance
+   */
   compare: Comparator;
 
+  /**
+   * 
+   * @param comparator A comparator instance
+   */
   constructor(comparator?: comparatorFn) {
     this.head = null;
     this.tail = null;

@@ -1,7 +1,10 @@
-import { threadId } from 'worker_threads';
-import Comparator, { comparatorFn } from '../utils/Comparator';
-
-export default abstract class Heap {
+/**
+ * 
+ * @module Heap
+ */
+import {Comparator, comparatorFn } from '../utils/Comparator';
+// TODO: Complete Heap documentation
+export abstract class Heap {
   compare: Comparator;
   heapContainer: any[];
 

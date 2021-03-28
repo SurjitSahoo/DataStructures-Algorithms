@@ -1,6 +1,10 @@
+/**
+ * Comparator class for data items.
+ * This class offers comparison functions such as quality, lessThan, greaterThan etc.
+ */
 export type comparatorFn = (a: any, b: any) => number;
 
-export default class Comparator {
+export class Comparator {
   compare: comparatorFn
 
   constructor(fn?: comparatorFn) {

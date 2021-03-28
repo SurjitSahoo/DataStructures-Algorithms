@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "clear_jest": "jest --clearCache",
-    "docs": "typedoc --out docs src"
+    "docs": "typedoc --options tsdoc.json"
   },
   "keywords": [
     "data structures",

@@ -1,4 +1,4 @@
-import Node from '../LinkedListNode';
+import { LinkedListNode as Node } from '../LinkedListNode';
 
 describe('Linked List Node', () => {
   it('should create node with primitive value', () => {

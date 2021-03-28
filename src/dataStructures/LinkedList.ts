@@ -1,5 +1,16 @@
-import Comparator, { comparatorFn } from '../utils/Comparator';
-import Node from './LinkedListNode';
+/**
+ * LinkedList is linear collection of data items
+ * where the data objects are not stored in consecutive spaces,
+ * but each data item is pointing to the next data item
+ * 
+ * ![Linked List](https://upload.wikimedia.org/wikipedia/commons/6/6d/Singly-linked-list.svg)
+ * 
+ * [![YouTube](http://img.youtube.com/vi/njTh_OwMljA/0.jpg)](http://www.youtube.com/watch?v=njTh_OwMljA)
+ * 
+ * @module LinkedList
+ */
+import { Comparator, comparatorFn } from '../utils/Comparator';
+import { LinkedListNode as Node } from './LinkedListNode';
 
 interface IValue {
   value: any,
@@ -11,11 +22,23 @@ interface ICallback {
 };
 type findArg = IValue | ICallback;
 
-export default class LinkedList {
+/**
+ * Linked List data structure
+ */
+export class LinkedList {
+  /**
+   * @property Head of the linkedList
+   */
   head: Node | null;
+  /**
+   * @property Tail of the linkedList
+   */
   tail: Node | null;
   compare: Comparator
 
+  /**
+   * @param comparator - A comparator instance
+   */
   constructor(comparator?: comparatorFn) {
     this.head = null;
     this.tail = null;

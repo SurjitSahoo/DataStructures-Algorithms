@@ -1,4 +1,4 @@
-import Comparator from '../Comparator';
+import {Comparator} from '../Comparator';
 
 describe('Comparator', () => {
   it('should compare two numbers', () => {

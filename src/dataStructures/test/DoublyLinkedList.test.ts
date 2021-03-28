@@ -1,5 +1,4 @@
-import { lstat } from 'fs';
-import LinkedList from '../DoublyLinkedList';
+import {DoublyLinkedList as LinkedList} from '../DoublyLinkedList';
 
 describe('Doubly Linked List', () => {
   it('should create empty linked list', () => {

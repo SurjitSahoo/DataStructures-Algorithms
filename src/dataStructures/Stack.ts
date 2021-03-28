@@ -1,6 +1,23 @@
-import LinkedList from "./LinkedList";
+/**
+ * Stack is an abstract list of entities which follows Last-In-First-Out data structure or LIFO
+ * It comes from the analogy of physical items stacked on top of each other.
+ * ## Operations
+ * - **push** - Add item to the stack
+ * - **pop** - Remove item from the stack
+ * - **peak** - Get the top item without altering the stack
+ * 
+ * ![Stack](https://upload.wikimedia.org/wikipedia/commons/b/b4/Lifo_stack.png)
+ * 
+ * [![YouTube](http://img.youtube.com/vi/wjI1WNcIntg/0.jpg)](http://www.youtube.com/watch?v=wjI1WNcIntg)
+ * 
+ * @module Stack
+ */
+import { LinkedList } from "./LinkedList";
 
-export default class Stack {
+/**
+ * Stack data structure
+ */
+export class Stack {
   private stack: LinkedList;
 
   constructor() {

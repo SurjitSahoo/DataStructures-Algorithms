@@ -1,6 +1,24 @@
-import LinkedList from "./LinkedList";
+/**
+ * - A queue is an abstract list of nodes which follows First-In-First-Out data structure or FIFO
+ * - In this data structure a node can be added to the list at the rear-terminal only, known as **Enqueue**
+ * - and a node can be removed from the list at front-terminal only, known as **Dequeue**
+ * - Example: Queue for tickets at movie theatre 🎦
+ * 
+ * ![Queue](https://upload.wikimedia.org/wikipedia/commons/5/52/Data_Queue.svg)
+ * 
+ * [![YouTube](http://img.youtube.com/vi/wjI1WNcIntg/0.jpg)](http://www.youtube.com/watch?v=wjI1WNcIntg)
+ * 
+ * @module Queue
+ */
+import { LinkedList } from "./LinkedList";
 
-export default class Queue {
+/**
+ * Queue data structure
+ */
+export class Queue {
+  /**
+   * @property list of entities in the queue
+   */
   private queue: LinkedList;
 
   constructor() {
