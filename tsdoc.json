@@ -11,5 +11,8 @@
     "**/__test_utils__/**/*",
     "**/__fixtures__/**/*",
     "**/testsuite/**/*"
-  ]
+  ],
+  "categorizeByGroup": false,
+  "hideGenerator": true,
+  "disableOutputCheck": true
 }
