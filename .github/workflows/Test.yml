@@ -13,5 +13,5 @@ jobs:
         node-version: 14
 
     - name: Install and Test
-      run: npm ci
+      run: npm install
            npm test

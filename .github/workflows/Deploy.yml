@@ -18,7 +18,7 @@ jobs:
 
     - name: Install and Build
       needs: test
-      run: npm ci
+      run: npm install
            npm run docs
 
     - name: Deploy 🚀
