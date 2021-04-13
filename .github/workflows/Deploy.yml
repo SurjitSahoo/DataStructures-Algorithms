@@ -29,11 +29,3 @@ jobs:
         keep_files: true
         user_name: 'Surjit Kumar Sahoo'
         user_email: 'surjitsahoo0@gmail.com'
-
-    # - name: Deploy 🚀
-    #   uses: JamesIves/github-pages-deploy-action@4.1.1
-    #   with:
-    #     branch: github-pages
-    #     folder: docs
-    #     git-config-name: Surjit Kumar Sahoo
-    #     git-config-email: surjitsahoo0@gmail.com
