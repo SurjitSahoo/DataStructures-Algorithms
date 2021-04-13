@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "clear_jest": "jest --clearCache",
-    "docs": "typedoc --options tsdoc.json"
+    "docs": "typedoc --options tsdoc.json --plugin typedoc-plugin-extras --favicon docs/favicon.png"
   },
   "keywords": [
     "data structures",
@@ -25,5 +25,8 @@
     "ts-node": "^9.0.0",
     "typedoc": "^0.20.34",
     "typescript": "^4.0.3"
+  },
+  "dependencies": {
+    "typedoc-plugin-extras": "^1.1.7"
   }
 }
