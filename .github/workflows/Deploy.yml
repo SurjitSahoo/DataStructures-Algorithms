@@ -25,6 +25,5 @@ jobs:
       with:
         branch: github-pages
         folder: docs
-        target-folder: docs
         git-config-name: Surjit Kumar Sahoo
         git-config-email: surjitsahoo0@gmail.com
