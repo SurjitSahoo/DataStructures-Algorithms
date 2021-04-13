@@ -59,7 +59,43 @@ describe('MaxHeap', () => {
     expect(heap.find(5)).toEqual([2,4]);
   })
 
-  it('should remove items from the heap and perform appropriate heapify operation', () => {
+  it('should perform heapify down when items are removed from the top of the Heap', () => {
     const heap = new MaxHeap();
+    heap.add(3).add(5).add(10).add(11).add(5);
+
+    expect(heap.toString()).toBe('11,10,5,3,5');
+    expect(heap.remove(11).toString()).toBe('10,5,5,3');
+    expect(heap.remove(11).peak()).toBe(10);
+    expect(heap.remove(10).toString()).toBe('5,5,3');
+    expect(heap.remove(5).toString()).toBe('3');
+  })
+
+  it('should perform heapify up when items are removed from in between or bottom of the tree', () => {
+    const heap = new MaxHeap();
+    heap.add(3).add(10).add(5).add(6).add(7).add(4).add(6).add(8).add(2).add(1);
+
+    expect(heap.toString()).toBe('10,8,6,7,6,4,5,3,2,1');
+    expect(heap.remove(4).toString()).toEqual('10,8,6,7,6,1,5,3,2');
+    expect(heap.remove(3).toString()).toEqual('10,8,6,7,6,1,5,2');
+    expect(heap.remove(5).toString()).toEqual('10,8,6,7,6,1,2');
+    expect(heap.remove(10).toString()).toEqual('8,7,6,2,6,1');
+    expect(heap.remove(6).toString()).toEqual('8,7,1,2');
+    expect(heap.remove(2).toString()).toEqual('8,7,1');
+    expect(heap.remove(1).toString()).toEqual('8,7');
+    expect(heap.remove(7).toString()).toEqual('8');
+    expect(heap.remove(8).toString()).toEqual('');
+  })
+
+  it('should be possible to find and remove items from heap using custom comparator', () => {
+    const comparator = new Comparator((a: string, b: string) => {
+      if (a.length === b.length) return 0;
+      else return a.length > b.length ? 1 : -1;
+    });
+
+    const heap = new MaxHeap();
+    heap.add('a').add('bb').add('ccc').add('dddd');
+
+    expect(heap.toString()).toBe('dddd,ccc,bb,a');
+    expect(heap.remove('hey', comparator).toString()).toBe('dddd,a,bb');
   })
 });

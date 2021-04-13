@@ -2,6 +2,7 @@
 
  Data-structures and algorithms in implemented typeScript
 
+[![CI](https://github.com/SurjitSahoo/DataStructures-Algorithms/actions/workflows/Test.yml/badge.svg)](https://github.com/SurjitSahoo/DataStructures-Algorithms/actions/workflows/Test.yml)
 ## Data Structures
 
 * [Linked List](src/dataStructures/LinkedList.ts) | [Test](src/dataStructures/test/LinkedList.test.ts)  

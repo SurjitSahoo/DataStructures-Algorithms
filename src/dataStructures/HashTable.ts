@@ -108,7 +108,6 @@ export class HashTable {
     const bucketLinkedList = this.buckets[index];
 
     const nodeToBeDeleted = bucketLinkedList.find({callback: (node: Node) => node.key === key});
-    console.log(nodeToBeDeleted);
     if (nodeToBeDeleted) {
       return bucketLinkedList.delete(nodeToBeDeleted.value)?.value.value;
     }
