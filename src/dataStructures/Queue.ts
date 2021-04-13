@@ -6,9 +6,11 @@
  * 
  * ![Queue](https://upload.wikimedia.org/wikipedia/commons/5/52/Data_Queue.svg)
  * 
+ * **Files:** [Queue](src/dataStructures/Queue.ts) | [Test](src/dataStructures/test/Queue.test.ts)
+ * 
  * [![YouTube](http://img.youtube.com/vi/wjI1WNcIntg/0.jpg)](http://www.youtube.com/watch?v=wjI1WNcIntg)
  * 
- * @module Queue
+ * @module 3. Queue
  */
 import { LinkedList } from "./LinkedList";
 

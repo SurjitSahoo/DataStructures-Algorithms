@@ -1,7 +1,12 @@
 /**
  * Doubly Linked List node is a single data item having a data-object and links to it's previous-node and next-node
- * @module Doubly-LinkedList-Node
+ * 
+ * **Files:** [Doubly Linked List Node](src/dataStructures/DoublyLinkedListNode.ts) | [Test](src/dataStructures/test/DoublyLinkedListNode.test.ts)
+ * 
+ * @module 2.a. Doubly-LinkedList-Node
  */
+
+/** */
 export class DoublyLinkedListNode {
   /**
    * @property data object

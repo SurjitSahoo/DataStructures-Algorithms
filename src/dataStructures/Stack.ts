@@ -8,9 +8,10 @@
  * 
  * ![Stack](https://upload.wikimedia.org/wikipedia/commons/b/b4/Lifo_stack.png)
  * 
+ * **Files:** [Stack](src/dataStructures/Stack.ts) | [Test](src/dataStructures/test/Stack.test.ts)
  * [![YouTube](http://img.youtube.com/vi/wjI1WNcIntg/0.jpg)](http://www.youtube.com/watch?v=wjI1WNcIntg)
  * 
- * @module Stack
+ * @module 4. Stack
  */
 import { LinkedList } from "./LinkedList";
 

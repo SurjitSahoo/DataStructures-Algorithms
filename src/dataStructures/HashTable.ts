@@ -23,7 +23,7 @@
  * 
  * [![YouTube](http://img.youtube.com/vi/shs0KM3wKv8/0.jpg)](http://www.youtube.com/watch?v=shs0KM3wKv8)
  * 
- * @module HashTable
+ * @module 5. HashTable
  */
 
 import { LinkedList } from './LinkedList';

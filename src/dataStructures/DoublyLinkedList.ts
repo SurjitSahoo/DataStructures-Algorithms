@@ -5,9 +5,11 @@
  * 
  * ![Doubly Linked List](https://upload.wikimedia.org/wikipedia/commons/5/5e/Doubly-linked-list.svg)
  * 
+ * **Files:** [Doubly Linked List](src/dataStructures/DoublyLinkedList.ts) | [Test](src/dataStructures/test/DoublyLinkedListNode.test.ts)  
+ * 
  * [![YouTube](http://img.youtube.com/vi/JdQeNxWCguQ/0.jpg)](http://www.youtube.com/watch?v=JdQeNxWCguQ)
  * 
- * @module DoublyLinkedList
+ * @module 2. DoublyLinkedList
  */
 import {DoublyLinkedListNode as Node} from './DoublyLinkedListNode';
 import {Comparator, comparatorFn} from '../utils/Comparator';
