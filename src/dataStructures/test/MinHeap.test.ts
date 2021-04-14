@@ -8,4 +8,9 @@ describe('MinHeap', () => {
     expect(heap.peak()).toBeNull();
     expect(heap.isEmpty()).toBe(true);
   })
+
+  it('should add items to the heap and Heapify them up',() => {
+    const heap = new MinHeap();
+    
+  })
 })
