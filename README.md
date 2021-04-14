@@ -1,10 +1,12 @@
-# DataStructures-Algorithms
-
- Data-structures and algorithms in implemented typeScript
+# Data-Structures and Algorithms
 
 [![CI](https://github.com/SurjitSahoo/DataStructures-Algorithms/actions/workflows/Test.yml/badge.svg)](https://github.com/SurjitSahoo/DataStructures-Algorithms/actions/workflows/Test.yml)&nbsp;
 [![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/SurjitSahoo/DataStructures-Algorithms)&nbsp;
-![Repo Size](https://img.shields.io/github/repo-size/surjitsahoo/DataStructures-Algorithms?style=flat)&nbsp;
+![-](https://img.shields.io/github/license/surjitsahoo/DataStructures-Algorithms)&nbsp;
+![-](https://img.shields.io/github/repo-size/surjitsahoo/DataStructures-Algorithms?style=flat)&nbsp;
+![-](https://img.shields.io/github/contributors/surjitsahoo/DataStructures-Algorithms)&nbsp;
+
+Data-structures and algorithms implemented in TypeScript
 
 ## Data Structures
 
