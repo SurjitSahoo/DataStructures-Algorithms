@@ -1,7 +1,9 @@
 /**
  * Doubly Linked List node is a single data item having a data-object and links to it's previous-node and next-node
  * 
- * **Files:** [Doubly Linked List Node](src/dataStructures/DoublyLinkedListNode.ts) | [Test](src/dataStructures/test/DoublyLinkedListNode.test.ts)
+ * **Files:** 
+ * [Doubly Linked List Node](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/DoublyLinkedListNode.ts) | 
+ * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/DoublyLinkedListNode.test.ts)
  * 
  * @module 2.a. Doubly-LinkedList-Node
  */

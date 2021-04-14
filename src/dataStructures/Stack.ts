@@ -8,7 +8,10 @@
  * 
  * ![Stack](https://upload.wikimedia.org/wikipedia/commons/b/b4/Lifo_stack.png)
  * 
- * **Files:** [Stack](src/dataStructures/Stack.ts) | [Test](src/dataStructures/test/Stack.test.ts)
+ * **Files:** 
+ * [Stack](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/Stack.ts) | 
+ * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/Stack.test.ts)
+ * 
  * [![YouTube](http://img.youtube.com/vi/wjI1WNcIntg/0.jpg)](http://www.youtube.com/watch?v=wjI1WNcIntg)
  * 
  * @module 4. Stack

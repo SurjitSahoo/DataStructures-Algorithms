@@ -1,7 +1,9 @@
 /**
  * LinkedList Node is a single node in the list, having a data item and link to the next data item
  * 
- * **Files:** [Linked List Node](src/dataStructures/LinkedListNode.ts) | [Test](src/dataStructures/test/LinkedListNode.test.ts)
+ * **Files:** 
+ * [Linked List Node](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/LinkedListNode.ts) |
+ * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/LinkedListNode.test.ts)
  * @module 1.a. LinkedList-Node
  */
 export class LinkedListNode {

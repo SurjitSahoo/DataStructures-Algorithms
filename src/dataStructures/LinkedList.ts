@@ -5,7 +5,9 @@
  * 
  * ![Linked List](https://upload.wikimedia.org/wikipedia/commons/6/6d/Singly-linked-list.svg)
  * 
- * **Files:** [Linked List](src/dataStructures/LinkedList.ts) | [Test](src/dataStructures/test/LinkedList.test.ts)  
+ * **Files:** 
+ * [Linked List](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/LinkedList.ts) | 
+ * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/LinkedList.test.ts)  
  * 
  * [![YouTube](http://img.youtube.com/vi/njTh_OwMljA/0.jpg)](http://www.youtube.com/watch?v=njTh_OwMljA)
  * 

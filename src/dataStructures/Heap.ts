@@ -11,7 +11,7 @@
  * 
  * **Files:** 
  * 
- * [Heap](src/dataStructures/Heap.ts)
+ * [Heap](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/Heap.ts)
  * 
  * [MinHeap](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/MinHeap.ts) | 
  * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/MinHeap.test.ts)

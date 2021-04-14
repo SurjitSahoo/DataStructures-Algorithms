@@ -5,7 +5,9 @@
  * 
  * ![Doubly Linked List](https://upload.wikimedia.org/wikipedia/commons/5/5e/Doubly-linked-list.svg)
  * 
- * **Files:** [Doubly Linked List](src/dataStructures/DoublyLinkedList.ts) | [Test](src/dataStructures/test/DoublyLinkedListNode.test.ts)  
+ * **Files:** 
+ * [Doubly Linked List](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/DoublyLinkedList.ts) | 
+ * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/DoublyLinkedListNode.test.ts)  
  * 
  * [![YouTube](http://img.youtube.com/vi/JdQeNxWCguQ/0.jpg)](http://www.youtube.com/watch?v=JdQeNxWCguQ)
  * 

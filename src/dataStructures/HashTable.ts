@@ -21,6 +21,10 @@
  *
  * ![Hash Collision](https://upload.wikimedia.org/wikipedia/commons/d/d0/Hash_table_5_0_1_1_1_1_1_LL.svg)
  * 
+ * **Files:** 
+ * [HashTable](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/HashTable.ts) |
+ * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/HashTable.test.ts)
+ * 
  * [![YouTube](http://img.youtube.com/vi/shs0KM3wKv8/0.jpg)](http://www.youtube.com/watch?v=shs0KM3wKv8)
  * 
  * @module 5. HashTable
