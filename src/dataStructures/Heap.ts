@@ -13,9 +13,11 @@
  * 
  * [Heap](src/dataStructures/Heap.ts)
  * 
- * [MinHeap](src/dataStructures/MinHeap.ts) | [Test](src/dataStructures/test/MinHeap.test.ts)
+ * [MinHeap](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/MinHeap.ts) | 
+ * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/MinHeap.test.ts)
  * 
- * [MaxHeap](src/dataStructures/MaxHeap.ts) | [Test](src/dataStructures/test/MaxHeap.test.ts)
+ * [MaxHeap](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/MaxHeap.ts) | 
+ * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/MaxHeap.test.ts)
  * 
  * [![YouTube](http://img.youtube.com/vi/t0Cq6tVNRBA/0.jpg)](http://www.youtube.com/watch?v=t0Cq6tVNRBA)
  * 
