@@ -9,4 +9,4 @@
 
 #### Data-structures and algorithms implemented in TypeScript
 
-[Read Online](https://surjitsahoo.github.io/DataStructures-Algorithms/)
+[Read Documentation](https://surjitsahoo.github.io/DataStructures-Algorithms/)
