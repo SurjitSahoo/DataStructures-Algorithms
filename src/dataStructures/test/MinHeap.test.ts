@@ -36,6 +36,7 @@ describe('MinHeap', () => {
   it('should poll items from the heap and perform heapify down', () => {
     const heap = new MinHeap();
     heap.add(5).add(3).add(10).add(2).add(2);
+    expect(heap.toString()).toBe('2,2,10,5,3');
 
     expect(heap.poll()).toBe(2);
     expect(heap.toString()).toBe('2,3,10,5');

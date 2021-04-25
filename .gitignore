@@ -3,3 +3,4 @@ build
 docs
 package-lock.json
 debug.log
+coverage
