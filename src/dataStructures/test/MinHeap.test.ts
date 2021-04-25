@@ -68,20 +68,20 @@ describe('MinHeap', () => {
     expect(heap.find(5)).toEqual([1, 4]);
   });
 
-  // it('should perform heapify down when items above the last child are removed', () => {
-  //   const heap = new MinHeap();
+  it('should perform heapify down when items above the last child are removed', () => {
+    const heap = new MinHeap();
 
-  //   heap.add(3);
-  //   heap.add(12);
-  //   heap.add(10);
-  //   heap.add(11);
-  //   heap.add(11);
+    heap.add(3);
+    heap.add(12);
+    heap.add(10);
+    heap.add(11);
+    heap.add(11);
 
-  //   expect(heap.toString()).toBe('3,11,10,12,11');
+    expect(heap.toString()).toBe('3,11,10,12,11');
 
-  //   expect(heap.remove(3).toString()).toEqual('10,11,11,12');
-  //   expect(heap.remove(3).peak()).toEqual(10);
-  //   expect(heap.remove(11).toString()).toEqual('10,12');
-  //   expect(heap.remove(3).peak()).toEqual(10);
-  // })
+    expect(heap.remove(3).toString()).toEqual('10,11,11,12');
+    expect(heap.remove(3).peak()).toEqual(10);
+    expect(heap.remove(11).toString()).toEqual('10,12');
+    expect(heap.remove(3).peak()).toEqual(10);
+  });
 });
