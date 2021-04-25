@@ -6,7 +6,7 @@
   "scripts": {
     "test": "jest",
     "coverage": "npm test -- --coverage",
-    "clear_jest": "jest --clearCache",
+    "test:clear": "jest --clearCache",
     "docs": "typedoc --options tsdoc.json --plugin typedoc-plugin-extras --favicon docs/favicon.png",
     "lint": "eslint",
     "lint:fix": "eslint --fix --ext .ts,.tsx .",
