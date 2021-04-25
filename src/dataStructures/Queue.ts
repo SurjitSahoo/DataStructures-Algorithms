@@ -3,18 +3,18 @@
  * - In this data structure a node can be added to the list at the rear-terminal only, known as **Enqueue**
  * - and a node can be removed from the list at front-terminal only, known as **Dequeue**
  * - Example: Queue for tickets at movie theatre 🎦
- * 
+ *
  * ![Queue](https://upload.wikimedia.org/wikipedia/commons/5/52/Data_Queue.svg)
- * 
- * **Files:** 
- * [Queue](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/Queue.ts) | 
+ *
+ * **Files:**
+ * [Queue](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/Queue.ts) |
  * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/Queue.test.ts)
- * 
+ *
  * [![YouTube](http://img.youtube.com/vi/wjI1WNcIntg/0.jpg)](http://www.youtube.com/watch?v=wjI1WNcIntg)
- * 
+ *
  * @module 3. Queue
  */
-import { LinkedList } from "./LinkedList";
+import { LinkedList } from './LinkedList';
 
 /**
  * Queue data structure

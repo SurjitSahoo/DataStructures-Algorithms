@@ -1,10 +1,10 @@
 /**
  * @module MinHeap
- * @ignore 
- * */ 
+ * @ignore
+ * */
 /** */
 
-import { Heap } from "./Heap";
+import { Heap } from './Heap';
 
 export class MinHeap extends Heap {
   /**

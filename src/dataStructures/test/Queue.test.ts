@@ -5,7 +5,7 @@ describe('Queue', () => {
     const queue = new Queue();
     expect(queue.isEmpty()).toBe(true);
     expect(queue.peak()).toBeNull();
-  })
+  });
 
   it('should enqueue and dequeue values in the queue', () => {
     const queue = new Queue();
@@ -15,6 +15,5 @@ describe('Queue', () => {
     expect(queue.dequeue()).toBe(1);
     expect(queue.dequeue()).toBe(2);
     expect(queue.dequeue()).toBeNull();
-  })
-
-})
+  });
+});

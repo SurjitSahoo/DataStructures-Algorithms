@@ -1,4 +1,4 @@
-import {DoublyLinkedListNode as Node} from '../DoublyLinkedListNode';
+import { DoublyLinkedListNode as Node } from '../DoublyLinkedListNode';
 
 describe('Doubly LinkedList', () => {
   it('should create primitive node', () => {
@@ -7,15 +7,15 @@ describe('Doubly LinkedList', () => {
     expect(node.next).toBeNull();
     expect(node.previous).toBeNull();
     expect(node.toString()).toBe('1');
-  })
+  });
 
   it('should create complex object node', () => {
-    const node = new Node({fname: 'surjit', lname: 'sahoo'});
-    expect(node.value).toEqual({fname: 'surjit', lname: 'sahoo'});
+    const node = new Node({ fname: 'surjit', lname: 'sahoo' });
+    expect(node.value).toEqual({ fname: 'surjit', lname: 'sahoo' });
     expect(node.next).toBeNull();
     expect(node.previous).toBeNull();
     expect(node.toString((node: any) => `${node.fname} ${node.lname}`)).toBe('surjit sahoo');
-  })
+  });
 
   it('should link nodes together', () => {
     // prev - node - 2 - 1
@@ -28,5 +28,5 @@ describe('Doubly LinkedList', () => {
     expect(node.previous?.value).toBe(prevNode.value);
     expect(node.next?.value).toBe(node2.value);
     expect(node.next?.next?.value).toBe(node1.value);
-  })
-})
+  });
+});

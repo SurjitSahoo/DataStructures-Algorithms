@@ -1,0 +1,11 @@
+{
+  "todo-tree.tree.scanMode": "workspace only",
+  "editor.formatOnSave": true,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "eslint.alwaysShowStatus": true,
+  "files.autoSave": "onFocusChange"
+}

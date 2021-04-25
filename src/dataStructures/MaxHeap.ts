@@ -1,10 +1,10 @@
 /**
  * @module MaxHeap
- * @ignore 
- * */ 
+ * @ignore
+ * */
 /** */
 
-import { Heap } from "./Heap";
+import { Heap } from './Heap';
 
 export class MaxHeap extends Heap {
   /**

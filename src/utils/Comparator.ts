@@ -5,13 +5,13 @@
 export type comparatorFn = (a: any, b: any) => number;
 
 export class Comparator {
-  compare: comparatorFn
+  compare: comparatorFn;
 
   constructor(fn?: comparatorFn) {
     this.compare = fn || Comparator.defaultComparator;
   }
 
-  static defaultComparator (a: number | string, b: number | string) {
+  static defaultComparator(a: number | string, b: number | string) {
     if (a == b) return 0;
 
     return a < b ? -1 : 1;

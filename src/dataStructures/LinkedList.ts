@@ -2,28 +2,28 @@
  * LinkedList is linear collection of data items
  * where the data objects are not stored in consecutive spaces,
  * but each data item is pointing to the next data item
- * 
+ *
  * ![Linked List](https://upload.wikimedia.org/wikipedia/commons/6/6d/Singly-linked-list.svg)
- * 
- * **Files:** 
- * [Linked List](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/LinkedList.ts) | 
- * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/LinkedList.test.ts)  
- * 
+ *
+ * **Files:**
+ * [Linked List](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/LinkedList.ts) |
+ * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/LinkedList.test.ts)
+ *
  * [![YouTube](http://img.youtube.com/vi/njTh_OwMljA/0.jpg)](http://www.youtube.com/watch?v=njTh_OwMljA)
- * 
+ *
  * @module 1. LinkedList
  */
 import { Comparator, comparatorFn } from '../utils/Comparator';
 import { LinkedListNode as Node } from './LinkedListNode';
 
 interface IValue {
-  value: any,
-  [x: string]: any 
-};
+  value: any;
+  [x: string]: any;
+}
 interface ICallback {
-  callback: (value: any) => boolean,
-  [x: string]: any 
-};
+  callback: (value: any) => boolean;
+  [x: string]: any;
+}
 type findArg = IValue | ICallback;
 
 /**
@@ -38,7 +38,7 @@ export class LinkedList {
    * @property Tail of the linkedList
    */
   tail: Node | null;
-  compare: Comparator
+  compare: Comparator;
 
   /**
    * @param comparator - A comparator instance
@@ -46,7 +46,7 @@ export class LinkedList {
   constructor(comparator?: comparatorFn) {
     this.head = null;
     this.tail = null;
-    this.compare = new Comparator(comparator)
+    this.compare = new Comparator(comparator);
   }
 
   toArray() {
@@ -62,18 +62,18 @@ export class LinkedList {
   }
 
   fromArray(values: any[]) {
-    values.forEach((value) => this.append(value));
+    values.forEach(value => this.append(value));
     return this;
   }
 
   toString(callback?: (value: any) => string) {
     let currentNode = this.head;
     const arr = [];
-    while(currentNode) {
+    while (currentNode) {
       arr.push(currentNode.toString(callback));
       currentNode = currentNode.next;
     }
-    return arr.toString()
+    return arr.toString();
   }
 
   append(value: any) {
@@ -100,12 +100,12 @@ export class LinkedList {
     return this;
   }
 
-  find({value, callback}: findArg) {
+  find({ value, callback }: findArg) {
     if (!this.head) return null;
 
     let currentNode: Node | null = this.head;
 
-    while(currentNode) {
+    while (currentNode) {
       // if callback is given, try to find the node using callback
       if (callback && callback(currentNode.value)) {
         return currentNode;
@@ -115,7 +115,7 @@ export class LinkedList {
         return currentNode;
       }
 
-      currentNode = currentNode.next
+      currentNode = currentNode.next;
     }
 
     return null;
@@ -127,8 +127,8 @@ export class LinkedList {
     }
 
     const deletedNode = this.head;
-    
-    if(this.head.next) {
+
+    if (this.head.next) {
       this.head = this.head.next;
     } else {
       this.head = null;

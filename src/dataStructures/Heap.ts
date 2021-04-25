@@ -2,28 +2,28 @@
  * Heap is a specialized tree-based data-structure that satisfies following heap-properties
  * - **Min Heap** -> Key of __Parent Node__ is always less than or equal to the key of __Child Node__
  * - **Max Heap** -> Key of __Parent Node__ is always greater than or equal to the key of __Child Node__
- * 
+ *
  * ### Min Heap
  * ![MinHeap](https://upload.wikimedia.org/wikipedia/commons/6/69/Min-heap.png)
- * 
+ *
  * ### Max Heap
  * ![MaxHeap](https://upload.wikimedia.org/wikipedia/commons/3/38/Max-Heap.svg)
- * 
- * **Files:** 
- * 
+ *
+ * **Files:**
+ *
  * [Heap](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/Heap.ts)
- * 
- * [MinHeap](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/MinHeap.ts) | 
+ *
+ * [MinHeap](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/MinHeap.ts) |
  * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/MinHeap.test.ts)
- * 
- * [MaxHeap](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/MaxHeap.ts) | 
+ *
+ * [MaxHeap](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/MaxHeap.ts) |
  * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/MaxHeap.test.ts)
- * 
+ *
  * [![YouTube](http://img.youtube.com/vi/t0Cq6tVNRBA/0.jpg)](http://www.youtube.com/watch?v=t0Cq6tVNRBA)
- * 
+ *
  * @module 6. Heap
  */
-import {Comparator, comparatorFn } from '../utils/Comparator';
+import { Comparator, comparatorFn } from '../utils/Comparator';
 
 /**
  * Heap Data structure
@@ -42,16 +42,16 @@ export abstract class Heap {
    * @returns Index of the left child
    */
   getLeftChildIndex(parentIndex: number) {
-    return (2 * parentIndex) + 1;
+    return 2 * parentIndex + 1;
   }
 
   /**
-   * 
+   *
    * @param parentIndex Parent's index
    * @returns Index of the right child
    */
   getRightChildIndex(parentIndex: number) {
-    return (2 * parentIndex) + 2;
+    return 2 * parentIndex + 2;
   }
 
   /**
@@ -98,9 +98,9 @@ export abstract class Heap {
   }
 
   /**
-   * 
+   *
    * @param childIndex Index of the node
-   * @returns 
+   * @returns
    */
   parent(childIndex: number) {
     return this.heapContainer[this.getParentIndex(childIndex)];
@@ -154,7 +154,7 @@ export abstract class Heap {
    * @param item Item to remove
    * @param comparator A comparator Instance
    */
-  remove(item: any, comparator=this.compare) {
+  remove(item: any, comparator = this.compare) {
     // Find out how many items we need to remove
     const noOfItemsToRemove = this.find(item, comparator).length;
 
@@ -174,8 +174,9 @@ export abstract class Heap {
         const parent = this.parent(indexToRemove);
         if (
           this.hasLeftChild(indexToRemove) && // make sure it's not the last child
-          (!parent || this.isPairInCorrectOrder(parent, this.heapContainer[indexToRemove]))) {
-            this.heapifyDown(indexToRemove);
+          (!parent || this.isPairInCorrectOrder(parent, this.heapContainer[indexToRemove]))
+        ) {
+          this.heapifyDown(indexToRemove);
         } else {
           this.heapifyUp(indexToRemove);
         }
@@ -189,7 +190,7 @@ export abstract class Heap {
    * @param comparator A comparator instance
    * @returns array of indices of the item in the heap
    */
-  find(item: any, comparator=this.compare) {
+  find(item: any, comparator = this.compare) {
     const foundItemIndices: number[] = [];
     for (let itemIndex = 0; itemIndex < this.heapContainer.length; itemIndex += 1) {
       if (comparator.equal(item, this.heapContainer[itemIndex])) {
@@ -206,11 +207,12 @@ export abstract class Heap {
    */
   heapifyUp(startIndex?: number) {
     let currentIndex = startIndex ?? this.heapContainer.length - 1;
-    while(
-      this.hasParent(currentIndex) && 
-      !this.isPairInCorrectOrder(this.parent(currentIndex), this.heapContainer[currentIndex])) {
-        this.swap(currentIndex, this.getParentIndex(currentIndex));
-        currentIndex = this.getParentIndex(currentIndex);
+    while (
+      this.hasParent(currentIndex) &&
+      !this.isPairInCorrectOrder(this.parent(currentIndex), this.heapContainer[currentIndex])
+    ) {
+      this.swap(currentIndex, this.getParentIndex(currentIndex));
+      currentIndex = this.getParentIndex(currentIndex);
     }
   }
 
@@ -224,7 +226,7 @@ export abstract class Heap {
     let currentIndex = startIndex ?? 0;
     let nextIndex = null;
 
-    while(this.hasLeftChild(currentIndex)) {
+    while (this.hasLeftChild(currentIndex)) {
       if (
         this.hasRightChild(currentIndex) &&
         // for MaxHeap it'll test if the first argument is greater
@@ -259,5 +261,5 @@ export abstract class Heap {
    * @param parent Parent Node
    * @param child Child Node
    */
-  abstract isPairInCorrectOrder(parent: any, child:any):boolean;
+  abstract isPairInCorrectOrder(parent: any, child: any): boolean;
 }

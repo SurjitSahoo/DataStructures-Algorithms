@@ -5,18 +5,18 @@
  * - **push** - Add item to the stack
  * - **pop** - Remove item from the stack
  * - **peak** - Get the top item without altering the stack
- * 
+ *
  * ![Stack](https://upload.wikimedia.org/wikipedia/commons/b/b4/Lifo_stack.png)
- * 
- * **Files:** 
- * [Stack](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/Stack.ts) | 
+ *
+ * **Files:**
+ * [Stack](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/Stack.ts) |
  * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/Stack.test.ts)
- * 
+ *
  * [![YouTube](http://img.youtube.com/vi/wjI1WNcIntg/0.jpg)](http://www.youtube.com/watch?v=wjI1WNcIntg)
- * 
+ *
  * @module 4. Stack
  */
-import { LinkedList } from "./LinkedList";
+import { LinkedList } from './LinkedList';
 
 /**
  * Stack data structure
@@ -29,7 +29,7 @@ export class Stack {
   }
 
   isEmpty() {
-    return !this.stack.head
+    return !this.stack.head;
   }
 
   peak() {

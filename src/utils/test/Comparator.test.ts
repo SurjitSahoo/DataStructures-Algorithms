@@ -1,4 +1,4 @@
-import {Comparator} from '../Comparator';
+import { Comparator } from '../Comparator';
 
 describe('Comparator', () => {
   it('should compare two numbers', () => {
@@ -9,4 +9,4 @@ describe('Comparator', () => {
     expect(compare.lessThanOrEqual(1, 2)).toBe(true);
     expect(compare.lessThanOrEqual(2, 2)).toBe(true);
   });
-})
+});

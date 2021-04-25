@@ -2,35 +2,34 @@
  * Doubly linked List is a sequentially linked data items
  * which are not stored in consecutive spaces.
  * Each data item has a data-object and they point to the next and previous data items / nodes.
- * 
+ *
  * ![Doubly Linked List](https://upload.wikimedia.org/wikipedia/commons/5/5e/Doubly-linked-list.svg)
- * 
- * **Files:** 
- * [Doubly Linked List](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/DoublyLinkedList.ts) | 
- * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/DoublyLinkedListNode.test.ts)  
- * 
+ *
+ * **Files:**
+ * [Doubly Linked List](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/DoublyLinkedList.ts) |
+ * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/DoublyLinkedListNode.test.ts)
+ *
  * [![YouTube](http://img.youtube.com/vi/JdQeNxWCguQ/0.jpg)](http://www.youtube.com/watch?v=JdQeNxWCguQ)
- * 
+ *
  * @module 2. DoublyLinkedList
  */
-import {DoublyLinkedListNode as Node} from './DoublyLinkedListNode';
-import {Comparator, comparatorFn} from '../utils/Comparator';
+import { DoublyLinkedListNode as Node } from './DoublyLinkedListNode';
+import { Comparator, comparatorFn } from '../utils/Comparator';
 
 interface IValue {
-  value: any,
-  [x: string]: any 
-};
+  value: any;
+  [x: string]: any;
+}
 interface ICallback {
-  callback: (value: any) => boolean,
-  [x: string]: any 
-};
+  callback: (value: any) => boolean;
+  [x: string]: any;
+}
 type findArg = IValue | ICallback;
 
 /**
  * Doubly LinkedList data structure
  */
 export class DoublyLinkedList {
-
   /**
    * @property head of the linked list
    */
@@ -45,13 +44,13 @@ export class DoublyLinkedList {
   compare: Comparator;
 
   /**
-   * 
+   *
    * @param comparator A comparator instance
    */
   constructor(comparator?: comparatorFn) {
     this.head = null;
     this.tail = null;
-    this.compare = new Comparator(comparator)
+    this.compare = new Comparator(comparator);
   }
 
   fromArray(values: any[]) {
@@ -81,7 +80,7 @@ export class DoublyLinkedList {
 
   toString(callback?: (value: any) => string) {
     let currentNode = this.head;
-    let arr = [];
+    const arr = [];
     while (currentNode) {
       arr.push(currentNode.toString(callback));
       currentNode = currentNode.next;
@@ -91,8 +90,8 @@ export class DoublyLinkedList {
 
   toStringRev(callback?: (value: any) => string) {
     let currentNode = this.tail;
-    let arr = [];
-    while(currentNode) {
+    const arr = [];
+    while (currentNode) {
       arr.push(currentNode.toString(callback));
       currentNode = currentNode.previous;
     }
@@ -144,12 +143,13 @@ export class DoublyLinkedList {
       return null;
     }
     const deletedNode = this.tail;
-    
+
     // if there is only one node
-    if(this.head === this.tail) {
+    if (this.head === this.tail) {
       this.head = null;
       this.tail = null;
-    } else { // there are more than one node
+    } else {
+      // there are more than one node
       this.tail = deletedNode.previous;
       if (this.tail) this.tail.next = null;
     }
@@ -164,8 +164,8 @@ export class DoublyLinkedList {
     let deletedNode = null;
     let currentNode: Node | null = this.head;
 
-    while(currentNode) {
-      if(this.compare.equal(currentNode.value, value)) {
+    while (currentNode) {
+      if (this.compare.equal(currentNode.value, value)) {
         deletedNode = currentNode;
         // if head is going to be deleted
         if (deletedNode === this.head) {
@@ -176,10 +176,12 @@ export class DoublyLinkedList {
           if (deletedNode === this.tail) {
             this.tail = null;
           }
-        } else if (deletedNode === this.tail) { // if it's the tail
+        } else if (deletedNode === this.tail) {
+          // if it's the tail
           this.tail = deletedNode.previous;
           if (this.tail) this.tail.next = null;
-        } else { // if the node is in the middle
+        } else {
+          // if the node is in the middle
           const previousNode = currentNode.previous;
           const nextNode = currentNode.next;
           if (previousNode) previousNode.next = nextNode;
@@ -192,7 +194,7 @@ export class DoublyLinkedList {
     return deletedNode;
   }
 
-  find({value, callback}: findArg) {
+  find({ value, callback }: findArg) {
     if (!this.head) {
       return null;
     }
@@ -217,7 +219,7 @@ export class DoublyLinkedList {
     let previousNode = null;
     let nextNode = null;
 
-    while(currentNode) {
+    while (currentNode) {
       previousNode = currentNode.previous;
       nextNode = currentNode.next;
 
