@@ -73,14 +73,14 @@ export abstract class Heap {
    * @param childIndex Index of the node
    */
   hasLeftChild(parentIndex: number) {
-    return this.getLeftChildIndex(parentIndex) <= this.heapContainer.length;
+    return this.getLeftChildIndex(parentIndex) < this.heapContainer.length;
   }
 
   /**
    * @param parentIndex Parent's index
    */
   hasRightChild(parentIndex: number) {
-    return this.getRightChildIndex(parentIndex) <= this.heapContainer.length;
+    return this.getRightChildIndex(parentIndex) < this.heapContainer.length;
   }
 
   /**
