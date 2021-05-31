@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>2. DoublyLinkedList | Data-Structures &amp; Algorithms in TypeScript</title>
+	<title>7. Priority Queue | Data-Structures &amp; Algorithms in TypeScript</title>
 	<meta name="description" content="Documentation for Data-Structures &amp; Algorithms in TypeScript">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,10 +56,10 @@
 					<a href="../modules.html">Data-Structures &amp; Algorithms in TypeScript</a>
 				</li>
 				<li>
-					<a href="2__doublylinkedlist.html">2. DoublyLinkedList</a>
+					<a href="7__priority_queue.html">7. Priority Queue</a>
 				</li>
 			</ul>
-			<h1>Module 2. DoublyLinkedList</h1>
+			<h1>Module 7. Priority Queue</h1>
 		</div>
 	</div>
 </header>
@@ -69,15 +69,31 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Doubly linked List is a sequentially linked data items
-							which are not stored in consecutive spaces.
-						Each data item has a data-object and they point to the next and previous data items / nodes.</p>
+						<ul>
+							<li>A priority queue is an abstract data type which is like regular queue or stack data structure,
+							but where additionally each element has a priority attached to it.</li>
+							<li>In a priority queue an element with high priority is served before an element with low priority.</li>
+							<li>If tow elements have the same priority, they&#39;re served according to the order in which they were
+							added to the queue.</li>
+						</ul>
 					</div>
-					<p><img src="https://upload.wikimedia.org/wikipedia/commons/5/5e/Doubly-linked-list.svg" alt="Doubly Linked List"></p>
+					<p>While priority queues are mostly implemented with heaps, they&#39;re distinct from heaps.
+						A priority queue is an abstract concept like a &quot;List&quot; or a &quot;Map&quot;, just like a list can be implemented
+						with linked list or an array, a priority queue can be implemented with a heap or a verity of other
+					methods such as an unordered array</p>
+					<a href="#used-case" id="used-case" style="color: inherit; text-decoration: none;">
+						<h3>Used case</h3>
+					</a>
+					<ul>
+						<li>suppose in a class of students you want to get the next best student or the next worst student
+							based on the marks they got in a test,
+						Priority queue can do that without going through the entire list of students one by one</li>
+						<li>Time complexity to peak() = O(n)</li>
+					</ul>
 					<p><strong>Files:</strong>
-						<a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/DoublyLinkedList.ts">Doubly Linked List</a> |
-					<a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/DoublyLinkedListNode.test.ts">Test</a></p>
-					<p><a href="http://www.youtube.com/watch?v=JdQeNxWCguQ"><img src="http://img.youtube.com/vi/JdQeNxWCguQ/0.jpg" alt="YouTube"></a></p>
+						<a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/PriorityQueue.ts">PriorityQueue</a> |
+					<a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/PriorityQueue.test.ts">Test</a></p>
+					<p><a href="http://www.youtube.com/watch?v=wptevk0bshY"><img src="http://img.youtube.com/vi/wptevk0bshY/0.jpg" alt="YouTube"></a></p>
 				</div>
 			</section>
 			<section class="tsd-panel-group tsd-index-group">
@@ -87,7 +103,7 @@
 						<section class="tsd-index-section ">
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/2__doublylinkedlist.doublylinkedlist.html" class="tsd-kind-icon">Doubly<wbr>Linked<wbr>List</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/7__priority_queue.priorityqueue.html" class="tsd-kind-icon">Priority<wbr>Queue</a></li>
 							</ul>
 						</section>
 					</div>
@@ -106,7 +122,7 @@
 					<li class=" tsd-kind-module">
 						<a href="1_a__linkedlist_node.html">1.a. <wbr>Linked<wbr>List-<wbr><wbr>Node</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="2__doublylinkedlist.html">2. <wbr>Doubly<wbr>Linked<wbr>List</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -124,7 +140,7 @@
 					<li class=" tsd-kind-module">
 						<a href="6__heap.html">6. <wbr>Heap</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="7__priority_queue.html">7. <wbr>Priority <wbr>Queue</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -135,7 +151,7 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module">
-						<a href="../classes/2__doublylinkedlist.doublylinkedlist.html" class="tsd-kind-icon">Doubly<wbr>Linked<wbr>List</a>
+						<a href="../classes/7__priority_queue.priorityqueue.html" class="tsd-kind-icon">Priority<wbr>Queue</a>
 					</li>
 				</ul>
 			</nav>

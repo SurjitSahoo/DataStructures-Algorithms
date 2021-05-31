@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Heap | Data-Structures &amp; Algorithms in TypeScript</title>
+	<title>PriorityQueue | Data-Structures &amp; Algorithms in TypeScript</title>
 	<meta name="description" content="Documentation for Data-Structures &amp; Algorithms in TypeScript">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -56,13 +56,13 @@
 					<a href="../modules.html">Data-Structures &amp; Algorithms in TypeScript</a>
 				</li>
 				<li>
-					<a href="../modules/6__heap.html">6. Heap</a>
+					<a href="../modules/7__priority_queue.html">7. Priority Queue</a>
 				</li>
 				<li>
-					<a href="6__heap.heap.html">Heap</a>
+					<a href="7__priority_queue.priorityqueue.html">PriorityQueue</a>
 				</li>
 			</ul>
-			<h1>Class Heap</h1>
+			<h1>Class PriorityQueue</h1>
 		</div>
 	</div>
 </header>
@@ -72,7 +72,7 @@
 			<section class="tsd-panel tsd-comment">
 				<div class="tsd-comment tsd-typography">
 					<div class="lead">
-						<p>Heap Data structure</p>
+						<p>Priority Queue data structure</p>
 					</div>
 				</div>
 			</section>
@@ -80,7 +80,12 @@
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">Heap</span>
+						<span class="tsd-signature-type">MinHeap</span>
+						<ul class="tsd-hierarchy">
+							<li>
+								<span class="target">PriorityQueue</span>
+							</li>
+						</ul>
 					</li>
 				</ul>
 			</section>
@@ -91,39 +96,45 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="6__heap.heap.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite"><a href="7__priority_queue.priorityqueue.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="6__heap.heap.html#compare" class="tsd-kind-icon">compare</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="6__heap.heap.html#heapcontainer" class="tsd-kind-icon">heap<wbr>Container</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="7__priority_queue.priorityqueue.html#compare" class="tsd-kind-icon">compare</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><a href="7__priority_queue.priorityqueue.html#heapcontainer" class="tsd-kind-icon">heap<wbr>Container</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="7__priority_queue.priorityqueue.html#priorities" class="tsd-kind-icon">priorities</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="6__heap.heap.html#add" class="tsd-kind-icon">add</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="6__heap.heap.html#find" class="tsd-kind-icon">find</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="6__heap.heap.html#getleftchildindex" class="tsd-kind-icon">get<wbr>Left<wbr>Child<wbr>Index</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="6__heap.heap.html#getparentindex" class="tsd-kind-icon">get<wbr>Parent<wbr>Index</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="6__heap.heap.html#getrightchildindex" class="tsd-kind-icon">get<wbr>Right<wbr>Child<wbr>Index</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="6__heap.heap.html#hasleftchild" class="tsd-kind-icon">has<wbr>Left<wbr>Child</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="6__heap.heap.html#hasparent" class="tsd-kind-icon">has<wbr>Parent</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="6__heap.heap.html#hasrightchild" class="tsd-kind-icon">has<wbr>Right<wbr>Child</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="6__heap.heap.html#heapifydown" class="tsd-kind-icon">heapify<wbr>Down</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="6__heap.heap.html#heapifyup" class="tsd-kind-icon">heapify<wbr>Up</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="6__heap.heap.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="6__heap.heap.html#ispairincorrectorder" class="tsd-kind-icon">is<wbr>Pair<wbr>InCorrect<wbr>Order</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="6__heap.heap.html#leftchild" class="tsd-kind-icon">left<wbr>Child</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="6__heap.heap.html#parent" class="tsd-kind-icon">parent</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="6__heap.heap.html#peak" class="tsd-kind-icon">peak</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="6__heap.heap.html#poll" class="tsd-kind-icon">poll</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="6__heap.heap.html#remove" class="tsd-kind-icon">remove</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="6__heap.heap.html#rightchild" class="tsd-kind-icon">right<wbr>Child</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="6__heap.heap.html#swap" class="tsd-kind-icon">swap</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="6__heap.heap.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="7__priority_queue.priorityqueue.html#add" class="tsd-kind-icon">add</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="7__priority_queue.priorityqueue.html#changepriority" class="tsd-kind-icon">change<wbr>Priority</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="7__priority_queue.priorityqueue.html#comparepriority" class="tsd-kind-icon">compare<wbr>Priority</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="7__priority_queue.priorityqueue.html#comparevalues" class="tsd-kind-icon">compare<wbr>Values</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="7__priority_queue.priorityqueue.html#find" class="tsd-kind-icon">find</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="7__priority_queue.priorityqueue.html#findbyvalue" class="tsd-kind-icon">find<wbr>ByValue</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="7__priority_queue.priorityqueue.html#getleftchildindex" class="tsd-kind-icon">get<wbr>Left<wbr>Child<wbr>Index</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="7__priority_queue.priorityqueue.html#getparentindex" class="tsd-kind-icon">get<wbr>Parent<wbr>Index</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="7__priority_queue.priorityqueue.html#getrightchildindex" class="tsd-kind-icon">get<wbr>Right<wbr>Child<wbr>Index</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="7__priority_queue.priorityqueue.html#hasleftchild" class="tsd-kind-icon">has<wbr>Left<wbr>Child</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="7__priority_queue.priorityqueue.html#hasparent" class="tsd-kind-icon">has<wbr>Parent</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="7__priority_queue.priorityqueue.html#hasrightchild" class="tsd-kind-icon">has<wbr>Right<wbr>Child</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="7__priority_queue.priorityqueue.html#hasvalue" class="tsd-kind-icon">has<wbr>Value</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="7__priority_queue.priorityqueue.html#heapifydown" class="tsd-kind-icon">heapify<wbr>Down</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="7__priority_queue.priorityqueue.html#heapifyup" class="tsd-kind-icon">heapify<wbr>Up</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="7__priority_queue.priorityqueue.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="7__priority_queue.priorityqueue.html#ispairincorrectorder" class="tsd-kind-icon">is<wbr>Pair<wbr>InCorrect<wbr>Order</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="7__priority_queue.priorityqueue.html#leftchild" class="tsd-kind-icon">left<wbr>Child</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="7__priority_queue.priorityqueue.html#parent" class="tsd-kind-icon">parent</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="7__priority_queue.priorityqueue.html#peak" class="tsd-kind-icon">peak</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="7__priority_queue.priorityqueue.html#poll" class="tsd-kind-icon">poll</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-overwrite"><a href="7__priority_queue.priorityqueue.html#remove" class="tsd-kind-icon">remove</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="7__priority_queue.priorityqueue.html#rightchild" class="tsd-kind-icon">right<wbr>Child</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="7__priority_queue.priorityqueue.html#swap" class="tsd-kind-icon">swap</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><a href="7__priority_queue.priorityqueue.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
 							</ul>
 						</section>
 					</div>
@@ -131,66 +142,74 @@
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Constructors</h2>
-				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
-					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Heap<span class="tsd-signature-symbol">(</span>comparatorFn<span class="tsd-signature-symbol">?: </span><a href="../modules/utils_comparator.html#comparatorfn" class="tsd-signature-type" data-tsd-kind="Type alias">comparatorFn</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="6__heap.heap.html" class="tsd-signature-type" data-tsd-kind="Class">Heap</a></li>
+					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Priority<wbr>Queue<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="7__priority_queue.priorityqueue.html" class="tsd-signature-type" data-tsd-kind="Class">PriorityQueue</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides MinHeap.constructor</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L33">dataStructures/Heap.ts:33</a></li>
+									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/PriorityQueue.ts#L34">dataStructures/PriorityQueue.ts:34</a></li>
 								</ul>
 							</aside>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5><span class="tsd-flag ts-flagOptional">Optional</span> comparatorFn: <a href="../modules/utils_comparator.html#comparatorfn" class="tsd-signature-type" data-tsd-kind="Type alias">comparatorFn</a></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="6__heap.heap.html" class="tsd-signature-type" data-tsd-kind="Class">Heap</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="7__priority_queue.priorityqueue.html" class="tsd-signature-type" data-tsd-kind="Class">PriorityQueue</a></h4>
 						</li>
 					</ul>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="compare" class="tsd-anchor"></a>
 					<h3>compare</h3>
 					<div class="tsd-signature tsd-kind-icon">compare<span class="tsd-signature-symbol">:</span> <a href="utils_comparator.comparator.html" class="tsd-signature-type" data-tsd-kind="Class">Comparator</a></div>
 					<aside class="tsd-sources">
+						<p>Inherited from MinHeap.compare</p>
 						<ul>
 							<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L32">dataStructures/Heap.ts:32</a></li>
 						</ul>
 					</aside>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
 					<a name="heapcontainer" class="tsd-anchor"></a>
 					<h3>heap<wbr>Container</h3>
 					<div class="tsd-signature tsd-kind-icon">heap<wbr>Container<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">[]</span></div>
 					<aside class="tsd-sources">
+						<p>Inherited from MinHeap.heapContainer</p>
 						<ul>
 							<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L33">dataStructures/Heap.ts:33</a></li>
+						</ul>
+					</aside>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="priorities" class="tsd-anchor"></a>
+					<h3>priorities</h3>
+					<div class="tsd-signature tsd-kind-icon">priorities<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">Map</span><span class="tsd-signature-symbol">&lt;</span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">, </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">&gt;</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/PriorityQueue.ts#L34">dataStructures/PriorityQueue.ts:34</a></li>
 						</ul>
 					</aside>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="add" class="tsd-anchor"></a>
 					<h3>add</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="6__heap.heap.html" class="tsd-signature-type" data-tsd-kind="Class">Heap</a></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">add<span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, priority<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="7__priority_queue.priorityqueue.html" class="tsd-signature-type" data-tsd-kind="Class">PriorityQueue</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides MinHeap.add</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L147">dataStructures/Heap.ts:147</a></li>
+									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/PriorityQueue.ts#L45">dataStructures/PriorityQueue.ts:45</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -198,20 +217,108 @@
 								<li>
 									<h5>item: <span class="tsd-signature-type">any</span></h5>
 								</li>
+								<li>
+									<h5>priority: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = 0</span></h5>
+								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="6__heap.heap.html" class="tsd-signature-type" data-tsd-kind="Class">Heap</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="7__priority_queue.priorityqueue.html" class="tsd-signature-type" data-tsd-kind="Class">PriorityQueue</a></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="changepriority" class="tsd-anchor"></a>
+					<h3>change<wbr>Priority</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">change<wbr>Priority<span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, priority<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="7__priority_queue.priorityqueue.html" class="tsd-signature-type" data-tsd-kind="Class">PriorityQueue</a></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/PriorityQueue.ts#L57">dataStructures/PriorityQueue.ts:57</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>item: <span class="tsd-signature-type">any</span></h5>
+								</li>
+								<li>
+									<h5>priority: <span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <a href="7__priority_queue.priorityqueue.html" class="tsd-signature-type" data-tsd-kind="Class">PriorityQueue</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="comparepriority" class="tsd-anchor"></a>
+					<h3>compare<wbr>Priority</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">compare<wbr>Priority<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">0</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">-1</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/PriorityQueue.ts#L75">dataStructures/PriorityQueue.ts:75</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Item A</p>
+									</div>
+								</li>
+								<li>
+									<h5>b: <span class="tsd-signature-type">any</span></h5>
+									<div class="tsd-comment tsd-typography">
+										<p>Item B</p>
+									</div>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">0</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">-1</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="comparevalues" class="tsd-anchor"></a>
+					<h3>compare<wbr>Values</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">compare<wbr>Values<span class="tsd-signature-symbol">(</span>a<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span>, b<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">0</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">-1</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/PriorityQueue.ts#L82">dataStructures/PriorityQueue.ts:82</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>a: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+								<li>
+									<h5>b: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">number</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">0</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">1</span><span class="tsd-signature-symbol"> | </span><span class="tsd-signature-type">-1</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="find" class="tsd-anchor"></a>
 					<h3>find</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">find<span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, comparator<span class="tsd-signature-symbol">?: </span><a href="utils_comparator.comparator.html" class="tsd-signature-type" data-tsd-kind="Class">Comparator</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from MinHeap.find</p>
 								<ul>
 									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L193">dataStructures/Heap.ts:193</a></li>
 								</ul>
@@ -237,14 +344,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="findbyvalue" class="tsd-anchor"></a>
+					<h3>find<wbr>ByValue</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">find<wbr>ByValue<span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/PriorityQueue.ts#L63">dataStructures/PriorityQueue.ts:63</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>item: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="getleftchildindex" class="tsd-anchor"></a>
 					<h3>get<wbr>Left<wbr>Child<wbr>Index</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Left<wbr>Child<wbr>Index<span class="tsd-signature-symbol">(</span>parentIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from MinHeap.getLeftChildIndex</p>
 								<ul>
 									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L44">dataStructures/Heap.ts:44</a></li>
 								</ul>
@@ -263,15 +394,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="getparentindex" class="tsd-anchor"></a>
 					<h3>get<wbr>Parent<wbr>Index</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Parent<wbr>Index<span class="tsd-signature-symbol">(</span>childIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from MinHeap.getParentIndex</p>
 								<ul>
 									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L61">dataStructures/Heap.ts:61</a></li>
 								</ul>
@@ -290,15 +422,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="getrightchildindex" class="tsd-anchor"></a>
 					<h3>get<wbr>Right<wbr>Child<wbr>Index</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">get<wbr>Right<wbr>Child<wbr>Index<span class="tsd-signature-symbol">(</span>parentIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from MinHeap.getRightChildIndex</p>
 								<ul>
 									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L53">dataStructures/Heap.ts:53</a></li>
 								</ul>
@@ -317,15 +450,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="hasleftchild" class="tsd-anchor"></a>
 					<h3>has<wbr>Left<wbr>Child</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">has<wbr>Left<wbr>Child<span class="tsd-signature-symbol">(</span>parentIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from MinHeap.hasLeftChild</p>
 								<ul>
 									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L75">dataStructures/Heap.ts:75</a></li>
 								</ul>
@@ -340,15 +474,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="hasparent" class="tsd-anchor"></a>
 					<h3>has<wbr>Parent</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">has<wbr>Parent<span class="tsd-signature-symbol">(</span>childIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from MinHeap.hasParent</p>
 								<ul>
 									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L68">dataStructures/Heap.ts:68</a></li>
 								</ul>
@@ -366,15 +501,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="hasrightchild" class="tsd-anchor"></a>
 					<h3>has<wbr>Right<wbr>Child</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">has<wbr>Right<wbr>Child<span class="tsd-signature-symbol">(</span>parentIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from MinHeap.hasRightChild</p>
 								<ul>
 									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L82">dataStructures/Heap.ts:82</a></li>
 								</ul>
@@ -393,14 +529,38 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="hasvalue" class="tsd-anchor"></a>
+					<h3>has<wbr>Value</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Value<span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/PriorityQueue.ts#L67">dataStructures/PriorityQueue.ts:67</a></li>
+								</ul>
+							</aside>
+							<h4 class="tsd-parameters-title">Parameters</h4>
+							<ul class="tsd-parameters">
+								<li>
+									<h5>item: <span class="tsd-signature-type">any</span></h5>
+								</li>
+							</ul>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="heapifydown" class="tsd-anchor"></a>
 					<h3>heapify<wbr>Down</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">heapify<wbr>Down<span class="tsd-signature-symbol">(</span>startIndex<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from MinHeap.heapifyDown</p>
 								<ul>
 									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L225">dataStructures/Heap.ts:225</a></li>
 								</ul>
@@ -425,15 +585,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="heapifyup" class="tsd-anchor"></a>
 					<h3>heapify<wbr>Up</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">heapify<wbr>Up<span class="tsd-signature-symbol">(</span>startIndex<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from MinHeap.heapifyUp</p>
 								<ul>
 									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L208">dataStructures/Heap.ts:208</a></li>
 								</ul>
@@ -457,15 +618,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="isempty" class="tsd-anchor"></a>
 					<h3>is<wbr>Empty</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">is<wbr>Empty<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from MinHeap.isEmpty</p>
 								<ul>
 									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L250">dataStructures/Heap.ts:250</a></li>
 								</ul>
@@ -474,23 +636,23 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="ispairincorrectorder" class="tsd-anchor"></a>
-					<h3><span class="tsd-flag ts-flagAbstract">Abstract</span> is<wbr>Pair<wbr>InCorrect<wbr>Order</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<h3>is<wbr>Pair<wbr>InCorrect<wbr>Order</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">is<wbr>Pair<wbr>InCorrect<wbr>Order<span class="tsd-signature-symbol">(</span>parent<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, child<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from MinHeap.isPairInCorrectOrder</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L264">dataStructures/Heap.ts:264</a></li>
+									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/MinHeap.ts#L15">dataStructures/MinHeap.ts:15</a></li>
 								</ul>
 							</aside>
 							<div class="tsd-comment tsd-typography">
 								<div class="lead">
-									<p>MaxHeap: Parent must be greater than or equal to the child node
-									MinHeap: Parent must be less than or equal to the child node</p>
+									<p>Parent must be less than or equal to the child node</p>
 								</div>
 							</div>
 							<h4 class="tsd-parameters-title">Parameters</h4>
@@ -512,15 +674,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="leftchild" class="tsd-anchor"></a>
 					<h3>left<wbr>Child</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">left<wbr>Child<span class="tsd-signature-symbol">(</span>parentIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from MinHeap.leftChild</p>
 								<ul>
 									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L89">dataStructures/Heap.ts:89</a></li>
 								</ul>
@@ -538,15 +701,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="parent" class="tsd-anchor"></a>
 					<h3>parent</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">parent<span class="tsd-signature-symbol">(</span>childIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from MinHeap.parent</p>
 								<ul>
 									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L105">dataStructures/Heap.ts:105</a></li>
 								</ul>
@@ -564,15 +728,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="peak" class="tsd-anchor"></a>
 					<h3>peak</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">peak<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from MinHeap.peak</p>
 								<ul>
 									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L122">dataStructures/Heap.ts:122</a></li>
 								</ul>
@@ -586,15 +751,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="poll" class="tsd-anchor"></a>
 					<h3>poll</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">poll<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from MinHeap.poll</p>
 								<ul>
 									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L133">dataStructures/Heap.ts:133</a></li>
 								</ul>
@@ -608,47 +774,43 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
 					<a name="remove" class="tsd-anchor"></a>
 					<h3>remove</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">remove<span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, comparator<span class="tsd-signature-symbol">?: </span><a href="utils_comparator.comparator.html" class="tsd-signature-type" data-tsd-kind="Class">Comparator</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="6__heap.heap.html" class="tsd-signature-type" data-tsd-kind="Class">Heap</a></li>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+						<li class="tsd-signature tsd-kind-icon">remove<span class="tsd-signature-symbol">(</span>item<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span>, comparator<span class="tsd-signature-symbol">?: </span><a href="utils_comparator.comparator.html" class="tsd-signature-type" data-tsd-kind="Class">Comparator</a><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="7__priority_queue.priorityqueue.html" class="tsd-signature-type" data-tsd-kind="Class">PriorityQueue</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Overrides MinHeap.remove</p>
 								<ul>
-									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L157">dataStructures/Heap.ts:157</a></li>
+									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/PriorityQueue.ts#L51">dataStructures/PriorityQueue.ts:51</a></li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
 									<h5>item: <span class="tsd-signature-type">any</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>Item to remove</p>
-									</div>
 								</li>
 								<li>
-									<h5>comparator: <a href="utils_comparator.comparator.html" class="tsd-signature-type" data-tsd-kind="Class">Comparator</a><span class="tsd-signature-symbol"> = ...</span></h5>
-									<div class="tsd-comment tsd-typography">
-										<p>A comparator Instance</p>
-									</div>
+									<h5><span class="tsd-flag ts-flagOptional">Optional</span> comparator: <a href="utils_comparator.comparator.html" class="tsd-signature-type" data-tsd-kind="Class">Comparator</a></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="6__heap.heap.html" class="tsd-signature-type" data-tsd-kind="Class">Heap</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="7__priority_queue.priorityqueue.html" class="tsd-signature-type" data-tsd-kind="Class">PriorityQueue</a></h4>
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="rightchild" class="tsd-anchor"></a>
 					<h3>right<wbr>Child</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">right<wbr>Child<span class="tsd-signature-symbol">(</span>parentIndex<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from MinHeap.rightChild</p>
 								<ul>
 									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L96">dataStructures/Heap.ts:96</a></li>
 								</ul>
@@ -666,15 +828,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="swap" class="tsd-anchor"></a>
 					<h3>swap</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">swap<span class="tsd-signature-symbol">(</span>index1<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span>, index2<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">void</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from MinHeap.swap</p>
 								<ul>
 									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L113">dataStructures/Heap.ts:113</a></li>
 								</ul>
@@ -698,15 +861,16 @@
 						</li>
 					</ul>
 				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 					<a name="tostring" class="tsd-anchor"></a>
 					<h3>to<wbr>String</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
 						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
+								<p>Inherited from MinHeap.toString</p>
 								<ul>
 									<li>Defined in <a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/f870c66/src/dataStructures/Heap.ts#L254">dataStructures/Heap.ts:254</a></li>
 								</ul>
@@ -744,10 +908,10 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/5__hashtable.html">5. <wbr>Hash<wbr>Table</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/6__heap.html">6. <wbr>Heap</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/7__priority_queue.html">7. <wbr>Priority <wbr>Queue</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -760,76 +924,94 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module">
-						<a href="6__heap.heap.html" class="tsd-kind-icon">Heap</a>
+						<a href="7__priority_queue.priorityqueue.html" class="tsd-kind-icon">Priority<wbr>Queue</a>
 						<ul>
-							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="6__heap.heap.html#constructor" class="tsd-kind-icon">constructor</a>
+							<li class=" tsd-kind-constructor tsd-parent-kind-class tsd-is-overwrite">
+								<a href="7__priority_queue.priorityqueue.html#constructor" class="tsd-kind-icon">constructor</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="7__priority_queue.priorityqueue.html#compare" class="tsd-kind-icon">compare</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class tsd-is-inherited">
+								<a href="7__priority_queue.priorityqueue.html#heapcontainer" class="tsd-kind-icon">heap<wbr>Container</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="6__heap.heap.html#compare" class="tsd-kind-icon">compare</a>
+								<a href="7__priority_queue.priorityqueue.html#priorities" class="tsd-kind-icon">priorities</a>
 							</li>
-							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="6__heap.heap.html#heapcontainer" class="tsd-kind-icon">heap<wbr>Container</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="6__heap.heap.html#add" class="tsd-kind-icon">add</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="7__priority_queue.priorityqueue.html#add" class="tsd-kind-icon">add</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="6__heap.heap.html#find" class="tsd-kind-icon">find</a>
+								<a href="7__priority_queue.priorityqueue.html#changepriority" class="tsd-kind-icon">change<wbr>Priority</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="6__heap.heap.html#getleftchildindex" class="tsd-kind-icon">get<wbr>Left<wbr>Child<wbr>Index</a>
+								<a href="7__priority_queue.priorityqueue.html#comparepriority" class="tsd-kind-icon">compare<wbr>Priority</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="6__heap.heap.html#getparentindex" class="tsd-kind-icon">get<wbr>Parent<wbr>Index</a>
+								<a href="7__priority_queue.priorityqueue.html#comparevalues" class="tsd-kind-icon">compare<wbr>Values</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="7__priority_queue.priorityqueue.html#find" class="tsd-kind-icon">find</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="6__heap.heap.html#getrightchildindex" class="tsd-kind-icon">get<wbr>Right<wbr>Child<wbr>Index</a>
+								<a href="7__priority_queue.priorityqueue.html#findbyvalue" class="tsd-kind-icon">find<wbr>ByValue</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="7__priority_queue.priorityqueue.html#getleftchildindex" class="tsd-kind-icon">get<wbr>Left<wbr>Child<wbr>Index</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="7__priority_queue.priorityqueue.html#getparentindex" class="tsd-kind-icon">get<wbr>Parent<wbr>Index</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="7__priority_queue.priorityqueue.html#getrightchildindex" class="tsd-kind-icon">get<wbr>Right<wbr>Child<wbr>Index</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="7__priority_queue.priorityqueue.html#hasleftchild" class="tsd-kind-icon">has<wbr>Left<wbr>Child</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="7__priority_queue.priorityqueue.html#hasparent" class="tsd-kind-icon">has<wbr>Parent</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="7__priority_queue.priorityqueue.html#hasrightchild" class="tsd-kind-icon">has<wbr>Right<wbr>Child</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="6__heap.heap.html#hasleftchild" class="tsd-kind-icon">has<wbr>Left<wbr>Child</a>
+								<a href="7__priority_queue.priorityqueue.html#hasvalue" class="tsd-kind-icon">has<wbr>Value</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="6__heap.heap.html#hasparent" class="tsd-kind-icon">has<wbr>Parent</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="7__priority_queue.priorityqueue.html#heapifydown" class="tsd-kind-icon">heapify<wbr>Down</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="6__heap.heap.html#hasrightchild" class="tsd-kind-icon">has<wbr>Right<wbr>Child</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="7__priority_queue.priorityqueue.html#heapifyup" class="tsd-kind-icon">heapify<wbr>Up</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="6__heap.heap.html#heapifydown" class="tsd-kind-icon">heapify<wbr>Down</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="7__priority_queue.priorityqueue.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="6__heap.heap.html#heapifyup" class="tsd-kind-icon">heapify<wbr>Up</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="7__priority_queue.priorityqueue.html#ispairincorrectorder" class="tsd-kind-icon">is<wbr>Pair<wbr>InCorrect<wbr>Order</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="6__heap.heap.html#isempty" class="tsd-kind-icon">is<wbr>Empty</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="7__priority_queue.priorityqueue.html#leftchild" class="tsd-kind-icon">left<wbr>Child</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="6__heap.heap.html#ispairincorrectorder" class="tsd-kind-icon">is<wbr>Pair<wbr>InCorrect<wbr>Order</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="7__priority_queue.priorityqueue.html#parent" class="tsd-kind-icon">parent</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="6__heap.heap.html#leftchild" class="tsd-kind-icon">left<wbr>Child</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="7__priority_queue.priorityqueue.html#peak" class="tsd-kind-icon">peak</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="6__heap.heap.html#parent" class="tsd-kind-icon">parent</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="7__priority_queue.priorityqueue.html#poll" class="tsd-kind-icon">poll</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="6__heap.heap.html#peak" class="tsd-kind-icon">peak</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-overwrite">
+								<a href="7__priority_queue.priorityqueue.html#remove" class="tsd-kind-icon">remove</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="6__heap.heap.html#poll" class="tsd-kind-icon">poll</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="7__priority_queue.priorityqueue.html#rightchild" class="tsd-kind-icon">right<wbr>Child</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="6__heap.heap.html#remove" class="tsd-kind-icon">remove</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="7__priority_queue.priorityqueue.html#swap" class="tsd-kind-icon">swap</a>
 							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="6__heap.heap.html#rightchild" class="tsd-kind-icon">right<wbr>Child</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="6__heap.heap.html#swap" class="tsd-kind-icon">swap</a>
-							</li>
-							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="6__heap.heap.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
+							<li class=" tsd-kind-method tsd-parent-kind-class tsd-is-inherited">
+								<a href="7__priority_queue.priorityqueue.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
 							</li>
 						</ul>
 					</li>
@@ -849,6 +1031,10 @@
 				<li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li>
 				<li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li>
 				<li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li>
+			</ul>
+			<ul class="tsd-legend">
+				<li class="tsd-kind-property tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited property</span></li>
+				<li class="tsd-kind-method tsd-parent-kind-class tsd-is-inherited"><span class="tsd-kind-icon">Inherited method</span></li>
 			</ul>
 			<ul class="tsd-legend">
 				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
