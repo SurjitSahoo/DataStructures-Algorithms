@@ -4,6 +4,7 @@
   "description": "Data-structures and algorithms in implemented typescript",
   "main": "index.js",
   "scripts": {
+    "build": "tsc",
     "test": "jest",
     "coverage": "npm test -- --coverage",
     "test:clear": "jest --clearCache",

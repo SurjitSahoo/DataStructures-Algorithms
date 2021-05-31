@@ -84,6 +84,9 @@ describe('Doubly Linked List', () => {
     expect(list.tail?.value).toBe(2);
     expect(list.tail?.next).toBeNull();
     expect(list.tail?.previous?.value).toBe(1);
+
+    expect(list.deleteTail()?.value).toBe(2);
+    expect(list.deleteTail()?.value).toBe(1);
   });
 
   it('should delete the node by value', () => {
@@ -91,17 +94,20 @@ describe('Doubly Linked List', () => {
     expect(list.delete(1)).toBeNull();
     list.append(1).append(1).append(2).append(3).append(4);
     expect(list.delete(3)?.value).toBe(3);
-    expect(list.delete(2)?.value).toBe(2);
-    expect(list.toString()).toBe('1,1,4');
-    expect(list.delete(1)?.value).toBe(1);
-    expect(list.toString()).toBe('4');
+    expect(list.toString()).toBe('1,1,2,4');
     expect(list.delete(4)?.value).toBe(4);
+    expect(list.delete(1)?.value).toBe(1);
+    expect(list.toString()).toBe('2');
+    expect(list.delete(4)).toBeNull();
+    expect(list.delete(2)?.value).toBe(2);
     expect(list.head).toBeNull();
     expect(list.tail).toBeNull();
   });
 
   it('should find a node by value', () => {
     const list = new LinkedList();
+    expect(list.find({ value: 2 })).toBeNull();
+
     list.append(1).append(1).append(2).append(3).append(4);
     expect(list.find({ value: 5 })).toBeNull();
     const node = list.find({ value: 4 });

@@ -30,6 +30,8 @@ describe('Hash Table', () => {
 
     expect(hashTable.get('a')).toBe('camel');
     expect(hashTable.get('b')).toBe('king-kong');
+    hashTable.set('b', 'godZilla');
+    expect(hashTable.get('b')).toBe('godZilla');
     expect(hashTable.get('c')).toBeUndefined();
 
     expect(hashTable.getKeys()).toEqual(['a', 'b', 'shit']);
