@@ -9,14 +9,14 @@
  * ![Stack](https://upload.wikimedia.org/wikipedia/commons/b/b4/Lifo_stack.png)
  *
  * **Files:**
- * [Stack](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/Stack.ts) |
- * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/Stack.test.ts)
+ * [Stack](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/4.Stack/Stack.ts) |
+ * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/4.Stack/test/Stack.test.ts)
  *
  * [![YouTube](http://img.youtube.com/vi/wjI1WNcIntg/0.jpg)](http://www.youtube.com/watch?v=wjI1WNcIntg)
  *
  * @module 4. Stack
  */
-import { LinkedList } from './LinkedList';
+import { LinkedList } from '../1.LinkedList/LinkedList';
 
 /**
  * Stack data structure

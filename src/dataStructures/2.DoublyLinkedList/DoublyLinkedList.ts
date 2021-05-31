@@ -6,15 +6,15 @@
  * ![Doubly Linked List](https://upload.wikimedia.org/wikipedia/commons/5/5e/Doubly-linked-list.svg)
  *
  * **Files:**
- * [Doubly Linked List](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/DoublyLinkedList.ts) |
- * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/DoublyLinkedListNode.test.ts)
+ * [Doubly Linked List](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/2.DoublyLinkedList/DoublyLinkedList.ts) |
+ * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/2.DoublyLinkedList/test/DoublyLinkedListNode.test.ts)
  *
  * [![YouTube](http://img.youtube.com/vi/JdQeNxWCguQ/0.jpg)](http://www.youtube.com/watch?v=JdQeNxWCguQ)
  *
  * @module 2. DoublyLinkedList
  */
 import { DoublyLinkedListNode as Node } from './DoublyLinkedListNode';
-import { Comparator, comparatorFn } from '../utils/Comparator';
+import { Comparator, comparatorFn } from '../../utils/Comparator';
 
 interface IValue {
   value: any;

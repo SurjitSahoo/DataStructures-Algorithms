@@ -17,15 +17,15 @@
  * - Time complexity to peak() = O(n)
  *
  * **Files:**
- * [PriorityQueue](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/PriorityQueue.ts) |
- * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/PriorityQueue.test.ts)
+ * [PriorityQueue](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/7.PriorityQueue/PriorityQueue.ts) |
+ * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/7.PriorityQueue/test/PriorityQueue.test.ts)
  *
  * [![YouTube](http://img.youtube.com/vi/wptevk0bshY/0.jpg)](http://www.youtube.com/watch?v=wptevk0bshY)
  *
  * @module 7. Priority Queue
  */
-import { Comparator } from '../utils/Comparator';
-import { MinHeap } from './MinHeap';
+import { Comparator } from '../../utils/Comparator';
+import { MinHeap } from '../6.Heap/MinHeap';
 
 /**
  * Priority Queue data structure

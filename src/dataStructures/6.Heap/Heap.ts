@@ -11,19 +11,19 @@
  *
  * **Files:**
  *
- * [Heap](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/Heap.ts)
+ * [Heap](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/6.Heap/Heap.ts)
  *
- * [MinHeap](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/MinHeap.ts) |
- * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/MinHeap.test.ts)
+ * [MinHeap](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/6.Heap/MinHeap.ts) |
+ * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/6.Heap/test/MinHeap.test.ts)
  *
- * [MaxHeap](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/MaxHeap.ts) |
- * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/MaxHeap.test.ts)
+ * [MaxHeap](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/6.Heap/MaxHeap.ts) |
+ * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/6.Heap/MaxHeap.test.ts)
  *
  * [![YouTube](http://img.youtube.com/vi/t0Cq6tVNRBA/0.jpg)](http://www.youtube.com/watch?v=t0Cq6tVNRBA)
  *
  * @module 6. Heap
  */
-import { Comparator, comparatorFn } from '../utils/Comparator';
+import { Comparator, comparatorFn } from '../../utils/Comparator';
 
 /**
  * Heap Data structure
