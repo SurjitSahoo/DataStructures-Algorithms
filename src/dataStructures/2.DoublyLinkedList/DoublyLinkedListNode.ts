@@ -5,7 +5,8 @@
  * [Doubly Linked List Node](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/DoublyLinkedListNode.ts) |
  * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/DoublyLinkedListNode.test.ts)
  *
- * @module 2.a. Doubly-LinkedList-Node
+ * @category Data Structure
+ * @module 2.a. Doubly Linked List Node
  */
 
 /** */

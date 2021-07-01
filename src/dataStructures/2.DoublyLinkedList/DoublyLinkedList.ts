@@ -11,7 +11,8 @@
  *
  * [![YouTube](http://img.youtube.com/vi/JdQeNxWCguQ/0.jpg)](http://www.youtube.com/watch?v=JdQeNxWCguQ)
  *
- * @module 2. DoublyLinkedList
+ * @category Data Structure
+ * @module 2. Doubly Linked List
  */
 import { DoublyLinkedListNode as Node } from './DoublyLinkedListNode';
 import { Comparator, comparatorFn } from '../../utils/Comparator';

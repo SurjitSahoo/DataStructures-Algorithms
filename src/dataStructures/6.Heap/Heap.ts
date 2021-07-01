@@ -21,6 +21,7 @@
  *
  * [![YouTube](http://img.youtube.com/vi/t0Cq6tVNRBA/0.jpg)](http://www.youtube.com/watch?v=t0Cq6tVNRBA)
  *
+ * @category Data Structure
  * @module 6. Heap
  */
 import { Comparator, comparatorFn } from '../../utils/Comparator';

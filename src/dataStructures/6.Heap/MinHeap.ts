@@ -1,4 +1,5 @@
 /**
+ * @category Data Structure
  * @module MinHeap
  * @ignore
  * */

@@ -4,7 +4,9 @@
  * **Files:**
  * [Linked List Node](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/LinkedListNode.ts) |
  * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/test/LinkedListNode.test.ts)
- * @module 1.a. LinkedList-Node
+ *
+ * @category Data Structure
+ * @module 1.a. Linked List Node
  */
 export class LinkedListNode {
   /**

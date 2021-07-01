@@ -11,7 +11,8 @@
  *
  * [![YouTube](http://img.youtube.com/vi/njTh_OwMljA/0.jpg)](http://www.youtube.com/watch?v=njTh_OwMljA)
  *
- * @module 1. LinkedList
+ * @category Data Structure
+ * @module 1. Linked List
  */
 import { Comparator, comparatorFn } from '../../utils/Comparator';
 import { LinkedListNode as Node } from './LinkedListNode';

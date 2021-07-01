@@ -22,6 +22,7 @@
  *
  * [![YouTube](http://img.youtube.com/vi/wptevk0bshY/0.jpg)](http://www.youtube.com/watch?v=wptevk0bshY)
  *
+ * @category Data Structure
  * @module 7. Priority Queue
  */
 import { Comparator } from '../../utils/Comparator';

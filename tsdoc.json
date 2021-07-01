@@ -2,7 +2,10 @@
   "name": "Data-Structures & Algorithms in TypeScript",
   "readme": "README.md",
   "out": "docs",
-  "entryPoints": ["src"],
+  "theme": "./node_modules/typedoc-neo-theme/bin/default",
+  "entryPoints": [
+    "src"
+  ],
   "exclude": [
     "**/test/**/*",
     "**/tests/**/*",
@@ -14,5 +17,17 @@
   ],
   "categorizeByGroup": false,
   "hideGenerator": true,
-  "disableOutputCheck": true
+  "disableOutputCheck": true,
+  "plugin": [
+    "typedoc-plugin-extras"
+  ],
+  "favicon": "docs/favicon.png",
+  "categorizeByGroup": true,
+  "categoryOrder": [
+    "Data Structure",
+    "Algorithm",
+    "Other",
+    "*"
+  ],
+  "defaultCategory": "Other"
 }

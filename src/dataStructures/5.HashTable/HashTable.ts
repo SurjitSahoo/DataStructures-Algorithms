@@ -27,7 +27,8 @@
  *
  * [![YouTube](http://img.youtube.com/vi/shs0KM3wKv8/0.jpg)](http://www.youtube.com/watch?v=shs0KM3wKv8)
  *
- * @module 5. HashTable
+ * @category Data Structure
+ * @module 5. Hash Table
  */
 
 import { LinkedList } from '../1.LinkedList/LinkedList';
@@ -122,7 +123,7 @@ export class HashTable {
     const index = this.hash(key);
     const bucketLinkedList = this.buckets[index];
     const node = bucketLinkedList.find({ callback: (value: Node) => value.key === key });
-    return node ? node.value.value : undefined;
+    return node?.value.value;
   }
 
   has(key: string) {

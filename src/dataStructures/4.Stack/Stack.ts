@@ -14,6 +14,7 @@
  *
  * [![YouTube](http://img.youtube.com/vi/wjI1WNcIntg/0.jpg)](http://www.youtube.com/watch?v=wjI1WNcIntg)
  *
+ * @category Data Structure
  * @module 4. Stack
  */
 import { LinkedList } from '../1.LinkedList/LinkedList';
