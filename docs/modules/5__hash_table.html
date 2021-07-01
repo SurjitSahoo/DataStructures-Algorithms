@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>7. Priority Queue | Data-Structures &amp; Algorithms in TypeScript</title>
+	<title>5. Hash Table | Data-Structures &amp; Algorithms in TypeScript</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,7 +57,7 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="7__priority_queue.html">7. Priority Queue</a>
+					<a href="5__hash_table.html">5. Hash Table</a>
 				</li>
 			</ul>
 		</div>
@@ -89,13 +89,13 @@
 					<li class=" tsd-kind-module">
 						<a href="4__stack.html">4. Stack</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="5__hash_table.html">5. Hash Table</a>
 					</li>
 					<li class=" tsd-kind-module">
 						<a href="6__heap.html">6. Heap</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="7__priority_queue.html">7. Priority Queue</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -111,35 +111,42 @@
 			</nav>
 		</div>
 		<div class="col-7 offset-3 col-content">
-			<h1>Module 7. Priority Queue</h1>
+			<h1>Module 5. Hash Table</h1>
 			<section class="tsd-panel tsd-comment"><div class="tsd-comment tsd-typography tsd-comment-shorttext">
 					<div class="lead">
-						<ul>
-							<li>A priority queue is an abstract data type which is like regular queue or stack data structure,
-							but where additionally each element has a priority attached to it.</li>
-							<li>In a priority queue an element with high priority is served before an element with low priority.</li>
-							<li>If tow elements have the same priority, they&#39;re served according to the order in which they were
-							added to the queue.</li>
-						</ul>
+						<p>A hash-table is basically a key-value lookup data structure, a hash map. A combination of features from Array and LinkedList data structures.
+							Array like constant complexity and LinkedList like flexibility
+						It uses a hash function to compute an index into an array of buckets to put or get the data from.</p>
 					</div>
 					</div><div class="tsd-comment tsd-typography tsd-comment-text">
-					<p>While priority queues are mostly implemented with heaps, they&#39;re distinct from heaps.
-						A priority queue is an abstract concept like a &quot;List&quot; or a &quot;Map&quot;, just like a list can be implemented
-						with linked list or an array, a priority queue can be implemented with a heap or a verity of other
-					methods such as an unordered array</p>
-					<a href="#used-case" id="used-case" style="color: inherit; text-decoration: none;">
-						<h3>Used case</h3>
+					<p><strong>lookup</strong> - key(input) -&gt; hashCode -&gt; index</p>
+					<a href="#problem-statement-collision" id="problem-statement-collision" style="color: inherit; text-decoration: none;">
+						<h3>Problem Statement (Collision)</h3>
 					</a>
 					<ul>
-						<li>suppose in a class of students you want to get the next best student or the next worst student
-							based on the marks they got in a test,
-						Priority queue can do that without going through the entire list of students one by one</li>
-						<li>Time complexity to peak() = O(n)</li>
+						<li>The size of the array is fixed, where as number of potential hashCodes is virtually infinite</li>
+						<li>Multiple keys can produce single hashCode</li>
+						<li>And multiple hashCodes can map to a single index of the array of buckets</li>
 					</ul>
+					<a href="#collision-handling" id="collision-handling" style="color: inherit; text-decoration: none;">
+						<h3>Collision Handling</h3>
+					</a>
+					<ul>
+						<li>The buckets will not store a single data entity, but rather it&#39;ll be a linkedList</li>
+						<li>The LinkedList will have all the data items whose keys mapped to the same index of the bucket</li>
+						<li>The data entities will consist of key as well as value as properties</li>
+						<li><blockquote>
+								<p>when multiple keys map to the same index, we go that index and search for the key in the linked list</p>
+							</blockquote>
+						</li>
+					</ul>
+					<p><img src="https://upload.wikimedia.org/wikipedia/commons/7/7d/Hash_table_3_1_1_0_1_0_0_SP.svg" alt="Hash Table"></p>
+					<p>Hash collision resolved by chaining.</p>
+					<p><img src="https://upload.wikimedia.org/wikipedia/commons/d/d0/Hash_table_5_0_1_1_1_1_1_LL.svg" alt="Hash Collision"></p>
 					<p><strong>Files:</strong>
-						<a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/7.PriorityQueue/PriorityQueue.ts">PriorityQueue</a> |
-					<a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/7.PriorityQueue/test/PriorityQueue.test.ts">Test</a></p>
-					<p><a href="http://www.youtube.com/watch?v=wptevk0bshY"><img src="http://img.youtube.com/vi/wptevk0bshY/0.jpg" alt="YouTube"></a></p>
+						<a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/5.HashTable/HashTable.ts">HashTable</a> |
+					<a href="https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/5.HashTable/test/HashTable.test.ts">Test</a></p>
+					<p><a href="http://www.youtube.com/watch?v=shs0KM3wKv8"><img src="http://img.youtube.com/vi/shs0KM3wKv8/0.jpg" alt="YouTube"></a></p>
 			</div></section>
 			<section class="tsd-panel-group tsd-index-group">
 				<section class="tsd-panel tsd-index-panel">
@@ -147,7 +154,7 @@
 						<section class="tsd-index-section ">
 							<h3>Classes</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/7__priority_queue.priorityqueue.html" class="tsd-kind-icon">Priority<wbr>Queue</a></li>
+								<li class="tsd-kind-class tsd-parent-kind-module"><a href="../classes/5__hash_table.hashtable.html" class="tsd-kind-icon">Hash<wbr>Table</a></li>
 							</ul>
 						</section>
 					</div>
@@ -159,7 +166,7 @@
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 					<li class=" tsd-kind-class tsd-parent-kind-module root">
-						<a href="../classes/7__priority_queue.priorityqueue.html" class="tsd-kind-icon">Priority<wbr>Queue</a>
+						<a href="../classes/5__hash_table.hashtable.html" class="tsd-kind-icon">Hash<wbr>Table</a>
 					</li>
 				</ul>
 			</nav>

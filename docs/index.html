@@ -4,7 +4,7 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>Data-Structures &amp; Algorithms in TypeScript</title>
-	<meta name="description" content="Documentation for Data-Structures &amp; Algorithms in TypeScript">
+	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="assets/css/main.css">
 	<script async src="assets/js/search.js" id="search-script"></script>
@@ -24,6 +24,8 @@
 						<li class="state loading">Preparing search index...</li>
 						<li class="state failure">The search index is not available</li>
 					</ul>
+					<ul class="results-priority" style="display:none">
+					</ul>
 					<a href="index.html" class="title">Data-Structures &amp; Algorithms in TypeScript</a>
 				</div>
 				<div class="table-cell" id="tsd-widgets">
@@ -42,6 +44,8 @@
 							<label class="tsd-widget" for="tsd-filter-inherited">Inherited</label>
 							<input type="checkbox" id="tsd-filter-externals" checked />
 							<label class="tsd-widget" for="tsd-filter-externals">Externals</label>
+							<input type="checkbox" id="tsd-filter-only-exported" />
+							<label class="tsd-widget" for="tsd-filter-only-exported">Only exported</label>
 						</div>
 					</div>
 					<a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a>
@@ -51,13 +55,60 @@
 	</div>
 	<div class="tsd-page-title">
 		<div class="container">
-			<h1>Data-Structures &amp; Algorithms in TypeScript</h1>
+			<ul class="tsd-breadcrumb">
+			</ul>
 		</div>
 	</div>
 </header>
 <div class="container container-main">
 	<div class="row">
-		<div class="col-8 col-content">
+		<div class="col-3 col-menu menu-sticky-wrap menu-highlight">
+			<nav class="tsd-navigation primary">
+				<ul>
+					<li class=" ">
+						<a href="modules.html">Exports</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/1__linked_list.html">1. Linked List</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/1_a__linked_list_node.html">1.a. Linked List Node</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/2__doubly_linked_list.html">2. Doubly Linked List</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/2_a__doubly_linked_list_node.html">2.a. Doubly Linked List Node</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/3__queue.html">3. Queue</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/4__stack.html">4. Stack</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/5__hash_table.html">5. Hash Table</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/6__heap.html">6. Heap</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/7__priority_queue.html">7. Priority Queue</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/datastructures_8_trie_trie.html">dataStructures/8.Trie/Trie</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/datastructures_8_trie_trienode.html">dataStructures/8.Trie/TrieNode</a>
+					</li>
+					<li class=" tsd-kind-module">
+						<a href="modules/utils_comparator.html">utils/Comparator</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+		<div class="col-7 offset-3 col-content">
+			<h1>Data-Structures &amp; Algorithms in TypeScript</h1>
 			<div class="tsd-panel tsd-typography">
 				<a href="#data-structures-and-algorithms" id="data-structures-and-algorithms" style="color: inherit; text-decoration: none;">
 					<h1>Data-Structures and Algorithms</h1>
@@ -73,45 +124,9 @@
 				</a>
 				<p><a href="https://surjitsahoo.github.io/DataStructures-Algorithms/">Read Documentation</a></p>
 			</div>
+			<!--{&quot;options&quot;:&quot;tsdoc.json&quot;,&quot;tsconfig&quot;:&quot;/home/runner/work/DataStructures-Algorithms/DataStructures-Algorithms&quot;,&quot;entryPoints&quot;:[&quot;src&quot;],&quot;exclude&quot;:[&quot;**/test/**/*&quot;,&quot;**/tests/**/*&quot;,&quot;**/__test__/**/*&quot;,&quot;**/__tests__/**/*&quot;,&quot;**/__test_utils__/**/*&quot;,&quot;**/__fixtures__/**/*&quot;,&quot;**/testsuite/**/*&quot;],&quot;externalPattern&quot;:[&quot;**/node_modules/**&quot;],&quot;excludeExternals&quot;:false,&quot;excludeNotDocumented&quot;:false,&quot;excludeInternal&quot;:false,&quot;excludePrivate&quot;:false,&quot;excludeProtected&quot;:false,&quot;disableSources&quot;:false,&quot;includes&quot;:&quot;&quot;,&quot;media&quot;:&quot;&quot;,&quot;watch&quot;:false,&quot;preserveWatchOutput&quot;:false,&quot;emit&quot;:false,&quot;out&quot;:&quot;docs&quot;,&quot;json&quot;:&quot;&quot;,&quot;pretty&quot;:true,&quot;theme&quot;:&quot;./node_modules/typedoc-neo-theme/bin/default&quot;,&quot;highlightTheme&quot;:&quot;light-plus&quot;,&quot;name&quot;:&quot;Data-Structures &amp; Algorithms in TypeScript&quot;,&quot;includeVersion&quot;:false,&quot;excludeTags&quot;:[],&quot;readme&quot;:&quot;README.md&quot;,&quot;defaultCategory&quot;:&quot;Other&quot;,&quot;categoryOrder&quot;:[&quot;Data Structure&quot;,&quot;Algorithm&quot;,&quot;Other&quot;,&quot;*&quot;],&quot;categorizeByGroup&quot;:true,&quot;gitRevision&quot;:&quot;&quot;,&quot;gitRemote&quot;:&quot;origin&quot;,&quot;gaID&quot;:&quot;&quot;,&quot;gaSite&quot;:&quot;auto&quot;,&quot;hideGenerator&quot;:true,&quot;toc&quot;:[],&quot;disableOutputCheck&quot;:true,&quot;help&quot;:false,&quot;version&quot;:false,&quot;showConfig&quot;:false,&quot;plugin&quot;:[&quot;typedoc-plugin-extras&quot;],&quot;logger&quot;:&quot;console&quot;,&quot;logLevel&quot;:1,&quot;listInvalidSymbolLinks&quot;:false,&quot;favicon&quot;:&quot;docs/favicon.png&quot;,&quot;noFavicon&quot;:false,&quot;hideDate&quot;:false,&quot;hideTime&quot;:false}-->
 		</div>
-		<div class="col-4 col-menu menu-sticky-wrap menu-highlight">
-			<nav class="tsd-navigation primary">
-				<ul>
-					<li class=" ">
-						<a href="modules.html">Exports</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/1__linkedlist.html">1. <wbr>Linked<wbr>List</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/1_a__linkedlist_node.html">1.a. <wbr>Linked<wbr>List-<wbr><wbr>Node</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/2__doublylinkedlist.html">2. <wbr>Doubly<wbr>Linked<wbr>List</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/2_a__doubly_linkedlist_node.html">2.a. <wbr>Doubly-<wbr><wbr>Linked<wbr>List-<wbr><wbr>Node</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/3__queue.html">3. <wbr>Queue</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/4__stack.html">4. <wbr>Stack</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/5__hashtable.html">5. <wbr>Hash<wbr>Table</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/6__heap.html">6. <wbr>Heap</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/7__priority_queue.html">7. <wbr>Priority <wbr>Queue</a>
-					</li>
-					<li class=" tsd-kind-module">
-						<a href="modules/utils_comparator.html">utils/<wbr>Comparator</a>
-					</li>
-				</ul>
-			</nav>
+		<div class="col-2 col-menu secondary-menu">
 			<nav class="tsd-navigation secondary menu-sticky">
 				<ul class="before-current">
 				</ul>
@@ -120,17 +135,6 @@
 	</div>
 </div>
 <footer>
-	<div class="container">
-		<h2>Legend</h2>
-		<div class="tsd-legend-group">
-			<ul class="tsd-legend">
-				<li class="tsd-kind-type-alias"><span class="tsd-kind-icon">Type alias</span></li>
-			</ul>
-			<ul class="tsd-legend">
-				<li class="tsd-kind-class"><span class="tsd-kind-icon">Class</span></li>
-			</ul>
-		</div>
-	</div>
 </footer>
 <div class="overlay"></div>
 <script src="assets/js/main.js"></script>
