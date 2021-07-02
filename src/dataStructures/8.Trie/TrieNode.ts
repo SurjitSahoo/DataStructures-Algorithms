@@ -1,3 +1,15 @@
+/**
+ * A trie node consists of a character, a flag marking the character if it completes a word
+ * and an array / hashTable of all of it's children nodes / characters.
+ *
+ * **Files:**
+ * [TrieNode](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/8.Trie/TrieNode.ts) |
+ * [Test](https://github.com/SurjitSahoo/DataStructures-Algorithms/blob/main/src/dataStructures/8.Trie/test/TrieNode.test.ts)
+ *
+ * @category Data Structure
+ * @module 8.a TrieNode
+ */
+
 import { HashTable } from '../5.HashTable/HashTable';
 
 export class TrieNode {
