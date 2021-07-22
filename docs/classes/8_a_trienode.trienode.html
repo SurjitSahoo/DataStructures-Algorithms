@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>HashTable | Data-Structures &amp; Algorithms in TypeScript</title>
+	<title>TrieNode | Data-Structures &amp; Algorithms in TypeScript</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="../assets/css/main.css">
@@ -57,10 +57,10 @@
 		<div class="container">
 			<ul class="tsd-breadcrumb">
 				<li>
-					<a href="../modules/5__hash_table.html">5. Hash Table</a>
+					<a href="../modules/8_a_trienode.html">8.a TrieNode</a>
 				</li>
 				<li>
-					<a href="5__hash_table.hashtable.html">HashTable</a>
+					<a href="8_a_trienode.trienode.html">TrieNode</a>
 				</li>
 			</ul>
 		</div>
@@ -92,7 +92,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/4__stack.html">4. Stack</a>
 					</li>
-					<li class="current tsd-kind-module">
+					<li class=" tsd-kind-module">
 						<a href="../modules/5__hash_table.html">5. Hash Table</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -104,7 +104,7 @@
 					<li class=" tsd-kind-module">
 						<a href="../modules/8_trie.html">8.Trie</a>
 					</li>
-					<li class=" tsd-kind-module">
+					<li class="current tsd-kind-module">
 						<a href="../modules/8_a_trienode.html">8.a TrieNode</a>
 					</li>
 					<li class=" tsd-kind-module">
@@ -120,17 +120,12 @@
 			</nav>
 		</div>
 		<div class="col-7 offset-3 col-content">
-			<h1>Class HashTable</h1>
-			<section class="tsd-panel tsd-comment"><div class="tsd-comment tsd-typography tsd-comment-shorttext">
-					<div class="lead">
-						<p>Hash Table data structure</p>
-					</div>
-			</div></section>
+			<h1>Class TrieNode</h1>
 			<section class="tsd-panel tsd-hierarchy">
 				<h3>Hierarchy</h3>
 				<ul class="tsd-hierarchy">
 					<li>
-						<span class="target">HashTable</span>
+						<span class="target">TrieNode</span>
 					</li>
 				</ul>
 			</section>
@@ -140,25 +135,27 @@
 						<section class="tsd-index-section ">
 							<h3>Constructors</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="5__hash_table.hashtable.html#constructor" class="tsd-kind-icon">constructor</a></li>
+								<li class="tsd-kind-constructor tsd-parent-kind-class"><a href="8_a_trienode.trienode.html#constructor" class="tsd-kind-icon">constructor</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Properties</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="5__hash_table.hashtable.html#buckets" class="tsd-kind-icon">buckets</a></li>
-								<li class="tsd-kind-property tsd-parent-kind-class"><a href="5__hash_table.hashtable.html#keys" class="tsd-kind-icon">keys</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="8_a_trienode.trienode.html#character" class="tsd-kind-icon">character</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="8_a_trienode.trienode.html#children" class="tsd-kind-icon">children</a></li>
+								<li class="tsd-kind-property tsd-parent-kind-class"><a href="8_a_trienode.trienode.html#iscompleteword" class="tsd-kind-icon">is<wbr>Complete<wbr>Word</a></li>
 							</ul>
 						</section>
 						<section class="tsd-index-section ">
 							<h3>Methods</h3>
 							<ul class="tsd-index-list">
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="5__hash_table.hashtable.html#delete" class="tsd-kind-icon">delete</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="5__hash_table.hashtable.html#get" class="tsd-kind-icon">get</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="5__hash_table.hashtable.html#getkeys" class="tsd-kind-icon">get<wbr>Keys</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="5__hash_table.hashtable.html#has" class="tsd-kind-icon">has</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="5__hash_table.hashtable.html#hash" class="tsd-kind-icon">hash</a></li>
-								<li class="tsd-kind-method tsd-parent-kind-class"><a href="5__hash_table.hashtable.html#set" class="tsd-kind-icon">set</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="8_a_trienode.trienode.html#addchild" class="tsd-kind-icon">add<wbr>Child</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="8_a_trienode.trienode.html#getchild" class="tsd-kind-icon">get<wbr>Child</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="8_a_trienode.trienode.html#haschild" class="tsd-kind-icon">has<wbr>Child</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="8_a_trienode.trienode.html#haschildren" class="tsd-kind-icon">has<wbr>Children</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="8_a_trienode.trienode.html#removechild" class="tsd-kind-icon">remove<wbr>Child</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="8_a_trienode.trienode.html#suggestchildren" class="tsd-kind-icon">suggest<wbr>Children</a></li>
+								<li class="tsd-kind-method tsd-parent-kind-class"><a href="8_a_trienode.trienode.html#tostring" class="tsd-kind-icon">to<wbr>String</a></li>
 							</ul>
 						</section>
 					</div>
@@ -170,25 +167,25 @@
 					<a name="constructor" class="tsd-anchor"></a>
 					<h3>constructor</h3>
 					<ul class="tsd-signatures tsd-kind-constructor tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">new <wbr>Hash<wbr>Table<span class="tsd-signature-symbol">(</span>tableSize<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">number</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="5__hash_table.hashtable.html" class="tsd-signature-type">HashTable</a></li>
+						<li class="tsd-signature tsd-kind-icon">new <wbr>Trie<wbr>Node<span class="tsd-signature-symbol">(</span>character<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, isCompleteWord<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="8_a_trienode.trienode.html" class="tsd-signature-type">TrieNode</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in dataStructures/5.HashTable/HashTable.ts:56</li>
+									<li>Defined in dataStructures/8.Trie/TrieNode.ts:29</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>tableSize: <span class="tsd-signature-type">number</span><span class="tsd-signature-symbol"> = ...</span></h5>
-									<div class="tsd-comment tsd-typography tsd-comment-text">
-										<p>size of the hash table</p>
-									</div>
+									<h5>character: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>isCompleteWord: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="5__hash_table.hashtable.html" class="tsd-signature-type">HashTable</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="8_a_trienode.trienode.html" class="tsd-signature-type">TrieNode</a></h4>
 						</li>
 					</ul>
 				</section>
@@ -196,126 +193,119 @@
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Properties</h2>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="buckets" class="tsd-anchor"></a>
-					<h3>buckets</h3>
-					<div class="tsd-signature tsd-kind-icon">buckets<span class="tsd-signature-symbol">:</span> <a href="1__linked_list.linkedlist.html" class="tsd-signature-type">LinkedList</a><span class="tsd-signature-symbol">[]</span></div>
+					<a name="character" class="tsd-anchor"></a>
+					<h3>character</h3>
+					<div class="tsd-signature tsd-kind-icon">character<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">string</span></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in dataStructures/5.HashTable/HashTable.ts:50</li>
+							<li>Defined in dataStructures/8.Trie/TrieNode.ts:19</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-tags">
 						<dl class="tsd-comment-tags"><dt>property</dt>
-							<dd><p>Array of buckets or slots</p>
+							<dd><p>Character</p>
 						</dd></dl>
 					</div>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
-					<a name="keys" class="tsd-anchor"></a>
-					<h3>keys</h3>
-					<div class="tsd-signature tsd-kind-icon">keys<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">object</span></div>
+					<a name="children" class="tsd-anchor"></a>
+					<h3>children</h3>
+					<div class="tsd-signature tsd-kind-icon">children<span class="tsd-signature-symbol">:</span> <a href="5__hash_table.hashtable.html" class="tsd-signature-type">HashTable</a></div>
 					<aside class="tsd-sources">
 						<ul>
-							<li>Defined in dataStructures/5.HashTable/HashTable.ts:54</li>
+							<li>Defined in dataStructures/8.Trie/TrieNode.ts:29</li>
 						</ul>
 					</aside>
 					<div class="tsd-comment tsd-typography tsd-comment-tags">
 						<dl class="tsd-comment-tags"><dt>property</dt>
-							<dd><p>A map of key -&gt; index in the bucket for fast lookup</p>
+							<dd><p>Children of current node</p>
 						</dd></dl>
 					</div>
-					<div class="tsd-type-declaration">
-						<h4>Type declaration</h4>
-						<ul class="tsd-parameters">
-							<li class="tsd-parameter-index-signature">
-								<h5><span class="tsd-signature-symbol">[</span>x: <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">]: </span><span class="tsd-signature-type">number</span></h5>
-							</li>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-property tsd-parent-kind-class">
+					<a name="iscompleteword" class="tsd-anchor"></a>
+					<h3>is<wbr>Complete<wbr>Word</h3>
+					<div class="tsd-signature tsd-kind-icon">is<wbr>Complete<wbr>Word<span class="tsd-signature-symbol">:</span> <span class="tsd-signature-type">boolean</span></div>
+					<aside class="tsd-sources">
+						<ul>
+							<li>Defined in dataStructures/8.Trie/TrieNode.ts:24</li>
 						</ul>
+					</aside>
+					<div class="tsd-comment tsd-typography tsd-comment-tags">
+						<dl class="tsd-comment-tags"><dt>property</dt>
+							<dd><p>Flag for marking a complete word</p>
+						</dd></dl>
 					</div>
 				</section>
 			</section>
 			<section class="tsd-panel-group tsd-member-group ">
 				<h2>Methods</h2>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="delete" class="tsd-anchor"></a>
-					<h3>delete</h3>
+					<a name="addchild" class="tsd-anchor"></a>
+					<h3>add<wbr>Child</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">delete<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">add<wbr>Child<span class="tsd-signature-symbol">(</span>character<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, isCompleteWord<span class="tsd-signature-symbol">?: </span><span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="8_a_trienode.trienode.html" class="tsd-signature-type">TrieNode</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in dataStructures/5.HashTable/HashTable.ts:107</li>
+									<li>Defined in dataStructures/8.Trie/TrieNode.ts:41</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>key: <span class="tsd-signature-type">string</span></h5>
+									<h5>character: <span class="tsd-signature-type">string</span></h5>
+								</li>
+								<li>
+									<h5>isCompleteWord: <span class="tsd-signature-type">boolean</span><span class="tsd-signature-symbol"> = false</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="8_a_trienode.trienode.html" class="tsd-signature-type">TrieNode</a></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="get" class="tsd-anchor"></a>
-					<h3>get</h3>
+					<a name="getchild" class="tsd-anchor"></a>
+					<h3>get<wbr>Child</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span></li>
+						<li class="tsd-signature tsd-kind-icon">get<wbr>Child<span class="tsd-signature-symbol">(</span>character<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="8_a_trienode.trienode.html" class="tsd-signature-type">TrieNode</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in dataStructures/5.HashTable/HashTable.ts:119</li>
+									<li>Defined in dataStructures/8.Trie/TrieNode.ts:37</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>key: <span class="tsd-signature-type">string</span></h5>
+									<h5>character: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">any</span></h4>
+							<h4 class="tsd-returns-title">Returns <a href="8_a_trienode.trienode.html" class="tsd-signature-type">TrieNode</a></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="getkeys" class="tsd-anchor"></a>
-					<h3>get<wbr>Keys</h3>
+					<a name="haschild" class="tsd-anchor"></a>
+					<h3>has<wbr>Child</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">get<wbr>Keys<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Child<span class="tsd-signature-symbol">(</span>character<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in dataStructures/5.HashTable/HashTable.ts:133</li>
-								</ul>
-							</aside>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
-						</li>
-					</ul>
-				</section>
-				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="has" class="tsd-anchor"></a>
-					<h3>has</h3>
-					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">has<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
-					</ul>
-					<ul class="tsd-descriptions">
-						<li class="tsd-description">
-							<aside class="tsd-sources">
-								<ul>
-									<li>Defined in dataStructures/5.HashTable/HashTable.ts:129</li>
+									<li>Defined in dataStructures/8.Trie/TrieNode.ts:65</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>key: <span class="tsd-signature-type">string</span></h5>
+									<h5>character: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
 							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
@@ -323,63 +313,76 @@
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="hash" class="tsd-anchor"></a>
-					<h3>hash</h3>
+					<a name="haschildren" class="tsd-anchor"></a>
+					<h3>has<wbr>Children</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">hash<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">number</span></li>
+						<li class="tsd-signature tsd-kind-icon">has<wbr>Children<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">boolean</span></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in dataStructures/5.HashTable/HashTable.ts:80</li>
+									<li>Defined in dataStructures/8.Trie/TrieNode.ts:69</li>
 								</ul>
 							</aside>
-							<div class="tsd-comment tsd-typography tsd-comment-shorttext">
-								<div class="lead">
-									<p>POLYNOMIAL STRING HASHING key(string input) -&gt; hash -&gt; index</p>
-								</div>
-								</div><div class="tsd-comment tsd-typography tsd-comment-text">
-								<p>hash(str) = [(str.charCodeAt(0) * P^(n-1)) + (str.charCodeAt(1) * P^(n-2)) + ... ] % M</p>
-								<p>P =&gt; any prime number, roughly equal to the total no of characters used in the key
-								* e.g. if the key only uses lower-case alphabets =&gt; prime number closer to 26 =&gt; 31</p>
-								<p>M =&gt; usually the size of bucket list,
-								because probability of two strings colliding must be inversely proportional to M</p>
-								<p>n =&gt; length of the key</p>
-							</div>
-							<h4 class="tsd-parameters-title">Parameters</h4>
-							<ul class="tsd-parameters">
-								<li>
-									<h5>key: <span class="tsd-signature-type">string</span></h5>
-								</li>
-							</ul>
-							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">number</span></h4>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">boolean</span></h4>
 						</li>
 					</ul>
 				</section>
 				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
-					<a name="set" class="tsd-anchor"></a>
-					<h3>set</h3>
+					<a name="removechild" class="tsd-anchor"></a>
+					<h3>remove<wbr>Child</h3>
 					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
-						<li class="tsd-signature tsd-kind-icon">set<span class="tsd-signature-symbol">(</span>key<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span>, value<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">any</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="5__hash_table.hashtable.html" class="tsd-signature-type">HashTable</a></li>
+						<li class="tsd-signature tsd-kind-icon">remove<wbr>Child<span class="tsd-signature-symbol">(</span>character<span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><a href="8_a_trienode.trienode.html" class="tsd-signature-type">TrieNode</a></li>
 					</ul>
 					<ul class="tsd-descriptions">
 						<li class="tsd-description">
 							<aside class="tsd-sources">
 								<ul>
-									<li>Defined in dataStructures/5.HashTable/HashTable.ts:91</li>
+									<li>Defined in dataStructures/8.Trie/TrieNode.ts:56</li>
 								</ul>
 							</aside>
 							<h4 class="tsd-parameters-title">Parameters</h4>
 							<ul class="tsd-parameters">
 								<li>
-									<h5>key: <span class="tsd-signature-type">string</span></h5>
-								</li>
-								<li>
-									<h5>value: <span class="tsd-signature-type">any</span></h5>
+									<h5>character: <span class="tsd-signature-type">string</span></h5>
 								</li>
 							</ul>
-							<h4 class="tsd-returns-title">Returns <a href="5__hash_table.hashtable.html" class="tsd-signature-type">HashTable</a></h4>
+							<h4 class="tsd-returns-title">Returns <a href="8_a_trienode.trienode.html" class="tsd-signature-type">TrieNode</a></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="suggestchildren" class="tsd-anchor"></a>
+					<h3>suggest<wbr>Children</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">suggest<wbr>Children<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in dataStructures/8.Trie/TrieNode.ts:73</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span><span class="tsd-signature-symbol">[]</span></h4>
+						</li>
+					</ul>
+				</section>
+				<section class="tsd-panel tsd-member tsd-kind-method tsd-parent-kind-class">
+					<a name="tostring" class="tsd-anchor"></a>
+					<h3>to<wbr>String</h3>
+					<ul class="tsd-signatures tsd-kind-method tsd-parent-kind-class">
+						<li class="tsd-signature tsd-kind-icon">to<wbr>String<span class="tsd-signature-symbol">(</span><span class="tsd-signature-symbol">)</span><span class="tsd-signature-symbol">: </span><span class="tsd-signature-type">string</span></li>
+					</ul>
+					<ul class="tsd-descriptions">
+						<li class="tsd-description">
+							<aside class="tsd-sources">
+								<ul>
+									<li>Defined in dataStructures/8.Trie/TrieNode.ts:77</li>
+								</ul>
+							</aside>
+							<h4 class="tsd-returns-title">Returns <span class="tsd-signature-type">string</span></h4>
 						</li>
 					</ul>
 				</section>
@@ -392,34 +395,40 @@
 				</ul>
 				<ul class="current">
 					<li class="current tsd-kind-class tsd-parent-kind-module root">
-						<a href="5__hash_table.hashtable.html" class="tsd-kind-icon">Hash<wbr>Table</a>
+						<a href="8_a_trienode.trienode.html" class="tsd-kind-icon">Trie<wbr>Node</a>
 						<ul>
 							<li class=" tsd-kind-constructor tsd-parent-kind-class">
-								<a href="5__hash_table.hashtable.html#constructor" class="tsd-kind-icon">constructor</a>
+								<a href="8_a_trienode.trienode.html#constructor" class="tsd-kind-icon">constructor</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="5__hash_table.hashtable.html#buckets" class="tsd-kind-icon">buckets</a>
+								<a href="8_a_trienode.trienode.html#character" class="tsd-kind-icon">character</a>
 							</li>
 							<li class=" tsd-kind-property tsd-parent-kind-class">
-								<a href="5__hash_table.hashtable.html#keys" class="tsd-kind-icon">keys</a>
+								<a href="8_a_trienode.trienode.html#children" class="tsd-kind-icon">children</a>
+							</li>
+							<li class=" tsd-kind-property tsd-parent-kind-class">
+								<a href="8_a_trienode.trienode.html#iscompleteword" class="tsd-kind-icon">is<wbr>Complete<wbr>Word</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="5__hash_table.hashtable.html#delete" class="tsd-kind-icon">delete</a>
+								<a href="8_a_trienode.trienode.html#addchild" class="tsd-kind-icon">add<wbr>Child</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="5__hash_table.hashtable.html#get" class="tsd-kind-icon">get</a>
+								<a href="8_a_trienode.trienode.html#getchild" class="tsd-kind-icon">get<wbr>Child</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="5__hash_table.hashtable.html#getkeys" class="tsd-kind-icon">get<wbr>Keys</a>
+								<a href="8_a_trienode.trienode.html#haschild" class="tsd-kind-icon">has<wbr>Child</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="5__hash_table.hashtable.html#has" class="tsd-kind-icon">has</a>
+								<a href="8_a_trienode.trienode.html#haschildren" class="tsd-kind-icon">has<wbr>Children</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="5__hash_table.hashtable.html#hash" class="tsd-kind-icon">hash</a>
+								<a href="8_a_trienode.trienode.html#removechild" class="tsd-kind-icon">remove<wbr>Child</a>
 							</li>
 							<li class=" tsd-kind-method tsd-parent-kind-class">
-								<a href="5__hash_table.hashtable.html#set" class="tsd-kind-icon">set</a>
+								<a href="8_a_trienode.trienode.html#suggestchildren" class="tsd-kind-icon">suggest<wbr>Children</a>
+							</li>
+							<li class=" tsd-kind-method tsd-parent-kind-class">
+								<a href="8_a_trienode.trienode.html#tostring" class="tsd-kind-icon">to<wbr>String</a>
 							</li>
 						</ul>
 					</li>
